@@ -1,0 +1,27 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/scalated/Berkeley/root/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/scalated/Berkeley/root/app/controllers/hello_world_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/scalated/Berkeley/root/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1553150123
+  }
+}
