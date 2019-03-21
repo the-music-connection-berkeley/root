@@ -1,3 +1,7 @@
 language: ruby
 rvm: 2.4.5
+before_install: bundle install
 script: rspec
+env:
+  global:
+    - CC_TEST_REPORTER_ID=9f2381d981dcfeb9bfd4b183f30f392119e47889cfb4c1ed77277b49571a4930
