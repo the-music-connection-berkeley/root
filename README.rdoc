@@ -2,6 +2,8 @@
 
 {<img src="https://api.codeclimate.com/v1/badges/436f927ae47cc9b250c5/test_coverage" />}[https://codeclimate.com/github/the-music-connection-berkeley/root/test_coverage]
 
+{<img src="https://travis-ci.org/the-music-connection-berkeley/root.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/the-music-connection-berkeley/root]
+
 
 
 == README
