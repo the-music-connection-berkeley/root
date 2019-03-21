@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # for secure stoage of API keys
-gem "figaro"
+gem 'figaro'
 gem 'pusher'
 
 # Use ActiveModel has_secure_password
