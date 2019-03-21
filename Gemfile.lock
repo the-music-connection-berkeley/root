@@ -145,7 +145,7 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    pg (1.1.4)
+    pg (0.18.4)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -271,7 +271,7 @@ DEPENDENCIES
   guard-rspec
   jbuilder (~> 2.0)
   jquery-rails
-  pg
+  pg (~> 0.18.4)
   rails (= 4.2.10)
   rails_12factor
   rspec-rails
