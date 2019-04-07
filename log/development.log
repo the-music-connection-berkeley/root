@@ -1682,3 +1682,18 @@ Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f
 
 
 Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-04-07 15:33:45 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (6638.3ms)
+Completed 200 OK in 6890ms (Views: 6880.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/students.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-04-07 15:33:52 -0700
+
+
+Started GET "/assets/students.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-04-07 15:33:52 -0700
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-04-07 16:21:35 -0700

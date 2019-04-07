@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   get 'forms/parent_student'
 
   get 'forms/tutor'
+  
+    # Routes for Google authentication
+  get ‘auth/:provider/callback’, to: ‘sessions#googleAuth’
+  get ‘auth/failure’, to: redirect(‘/’)
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
