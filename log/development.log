@@ -1,0 +1,1684 @@
+
+
+Started GET "/" for ::1 at 2019-03-25 22:22:46 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 21ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:25:22 -0700
+
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  activesupport (4.2.10) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.10) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.10) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.10) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.10) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.0ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (53.5ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:25:39 -0700
+
+ArgumentError ('' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:5:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.9ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.6ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:25:57 -0700
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'index'` to `controller: 'index'`. (called from block in <top (required)> at /Users/MartinKim/Documents/cs169/The Music Connection/config/routes.rb:5)
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:5:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.1ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:25:59 -0700
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:26:00 -0700
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (13.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.1ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.3ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:28:29 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:32:13 -0700
+Processing by HelloWorldController#hello_world as HTML
+Completed 500 Internal Server Error in 641ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template hello_world/hello_world, application/hello_world with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/MartinKim/Documents/cs169/The Music Connection/app/views"
+):
+  actionview (4.2.10) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.10) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.10) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.10) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.10) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.10) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.10) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.10) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.10) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.10) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (22.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.4ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:33:13 -0700
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'index.html'` to `controller: 'index.html'`. (called from block in <top (required)> at /Users/MartinKim/Documents/cs169/The Music Connection/config/routes.rb:6)
+
+ArgumentError ('index.html' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:6:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.1ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.9ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.9ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:33:14 -0700
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+  /Users/MartinKim/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.1ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.4ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:33:50 -0700
+
+ArgumentError ('views/index.html' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:6:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.5ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:33:57 -0700
+
+ArgumentError ('index.html' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:6:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:40:10 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 983ms (Views: 982.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-25 22:40:11 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-03-25 22:40:11 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-03-25 22:40:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-25 22:40:11 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-25 22:40:11 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-25 22:40:11 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-03-25 22:40:11 -0700
+
+
+Started GET "/" for ::1 at 2019-03-25 22:41:49 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 64ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-03-25 22:41:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-25 22:41:49 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-03-25 22:41:49 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-25 22:41:50 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-25 22:41:50 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-25 22:41:50 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-03-25 22:41:50 -0700
+
+
+Started GET "/" for ::1 at 2019-03-25 22:55:29 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /Users/MartinKim/Documents/cs169/The Music Connection/app/assets/images
+  /Users/MartinKim/Documents/cs169/The Music Connection/app/assets/javascripts
+  /Users/MartinKim/Documents/cs169/The Music Connection/app/assets/stylesheets
+  /Users/MartinKim/Documents/cs169/The Music Connection/vendor/assets/javascripts
+  /Users/MartinKim/Documents/cs169/The Music Connection/vendor/assets/stylesheets
+  /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts):
+    2: <html>
+    3: <head>
+    4:   <title>TMC</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:19
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3964516225824664522_70211416466520'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (25.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.9ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (62.4ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:56:16 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 6774ms (Views: 6766.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-25 22:56:23 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-25 22:56:23 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-25 22:56:23 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-25 22:56:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-25 22:56:23 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-25 22:56:23 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-25 22:56:23 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-25 22:56:23 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-25 22:56:23 -0700
+
+
+Started GET "/" for ::1 at 2019-03-25 22:59:09 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 22:59:59 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 23:00:43 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 23:00:54 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 23:00:59 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 23:01:08 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 23:01:10 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 23:01:11 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 23:01:42 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 65ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-27 21:38:50 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 310ms (Views: 301.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 21:38:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 21:38:51 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 21:38:51 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 21:38:51 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 21:38:51 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 21:38:51 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 21:38:51 -0700
+
+
+Started GET "/" for ::1 at 2019-03-27 21:43:05 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 21:43:05 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 21:43:19 -0700
+
+
+Started GET "/" for ::1 at 2019-03-27 21:43:49 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 21:43:49 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 21:43:49 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 21:43:49 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 21:43:49 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 21:43:49 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 21:43:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 21:43:49 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 21:43:49 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 21:43:49 -0700
+
+
+Started GET "/" for ::1 at 2019-03-27 21:43:58 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 21:43:58 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 21:43:58 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 21:43:58 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 21:43:58 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 21:43:58 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 21:43:58 -0700
+
+
+Started GET "/" for ::1 at 2019-03-27 21:45:58 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 21:45:58 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:07:53 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No such file or directory @ rb_sysopen - ../../assets/javascripts/form.js):
+    1: <script>
+    2: <%= File.read('../../assets/javascripts/form.js') %>
+    3: </script>
+    4: <div class="row title">
+    5:   <h1>Teacher's Form</h1>
+  app/views/forms/teacher.html.erb:2:in `read'
+  app/views/forms/teacher.html.erb:2:in `_app_views_forms_teacher_html_erb___718473119296834117_70207282453940'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.5ms)
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:09:34 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (5357.0ms)
+Completed 500 Internal Server Error in 5360ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( forms.js )` to `config/initializers/assets.rb` and restart your server):
+    1: <%= javascript_include_tag('forms.js') %>
+    2: <div class="row title">
+    3:   <h1>Teacher's Form</h1>
+    4: </div>
+  app/views/forms/teacher.html.erb:1:in `_app_views_forms_teacher_html_erb___718473119296834117_70207273443780'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.0ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.2ms)
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:10:21 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (213.1ms)
+Completed 200 OK in 443ms (Views: 435.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/form.self-6141b5a4a02b4a1b7b527b7e9d560633af401a69667138b7409519006a5c3108.js?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:10:22 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:11:24 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (455.6ms)
+Completed 200 OK in 748ms (Views: 747.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:11:25 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:11:25 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:11:25 -0700
+
+
+Started GET "/assets/forms.self-2ab759ce8656ce215f1557d7df19c332af52aabd04639fa5cf5a252c3bf8b09e.js?body=1" for ::1 at 2019-03-27 23:11:25 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:11:25 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:11:25 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:11:25 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:12:06 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (239.3ms)
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: [stdin]:9:1: reserved word 'function'):
+    1: <%= javascript_include_tag('forms.js') %>
+    2: <div class="row title">
+    3:   <h1>Teacher's Form</h1>
+    4: </div>
+  app/views/forms/teacher.html.erb:1:in `_app_views_forms_teacher_html_erb___2417340942038449957_70296608571280'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.9ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.3ms)
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:13:33 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (319.8ms)
+Completed 500 Internal Server Error in 323ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: [stdin]:6:9: unexpected ,):
+    1: <%= javascript_include_tag('forms.js') %>
+    2: <div class="row title">
+    3:   <h1>Teacher's Form</h1>
+    4: </div>
+  app/views/forms/teacher.html.erb:1:in `_app_views_forms_teacher_html_erb___2417340942038449957_70296608571280'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.7ms)
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:13:47 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (185.4ms)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: [stdin]:6:9: unexpected ,):
+    1: <%= javascript_include_tag('forms.js') %>
+    2: <div class="row title">
+    3:   <h1>Teacher's Form</h1>
+    4: </div>
+  app/views/forms/teacher.html.erb:1:in `_app_views_forms_teacher_html_erb___2417340942038449957_70296608571280'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (28.3ms)
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:13:48 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (183.8ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: [stdin]:6:9: unexpected ,):
+    1: <%= javascript_include_tag('forms.js') %>
+    2: <div class="row title">
+    3:   <h1>Teacher's Form</h1>
+    4: </div>
+  app/views/forms/teacher.html.erb:1:in `_app_views_forms_teacher_html_erb___2417340942038449957_70296608571280'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (29.8ms)
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:14:04 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (193.9ms)
+Completed 200 OK in 365ms (Views: 364.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/forms.self-79a95edfed984f9f429ecfd76ef94ca8959fea4a04cfa5e612b0cbe918f94905.js?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:14:04 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:14:08 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:14:08 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:14:08 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:16:23 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/assets/forms.self-79a95edfed984f9f429ecfd76ef94ca8959fea4a04cfa5e612b0cbe918f94905.js?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:16:23 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:16:31 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/forms.self-79a95edfed984f9f429ecfd76ef94ca8959fea4a04cfa5e612b0cbe918f94905.js?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:16:31 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:16:33 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:16:33 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:16:33 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:18:22 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (345.1ms)
+Completed 200 OK in 489ms (Views: 488.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/assets/forms.self-f97ad6ad51cd913fbd091d5c88a0c6f37b85915ed1b28a71b90b2d127c76f4a1.js?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:18:22 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:18:30 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/forms.self-f97ad6ad51cd913fbd091d5c88a0c6f37b85915ed1b28a71b90b2d127c76f4a1.js?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:18:31 -0700
+
+
+Started GET "/assets/forms.self-f97ad6ad51cd913fbd091d5c88a0c6f37b85915ed1b28a71b90b2d127c76f4a1.js?body=1" for ::1 at 2019-03-27 23:18:34 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:18:37 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:18:37 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:18:37 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:20:18 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (323.8ms)
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: [stdin]:7:1: unexpected if):
+    13:   <button type="button" id="prev">prev</button>
+    14:   <button type="button" id="next">next</button>
+    15: </div>
+    16: <%= javascript_include_tag('forms.js') %>
+  app/views/forms/teacher.html.erb:16:in `_app_views_forms_teacher_html_erb___2417340942038449957_70296621983240'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.8ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.9ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.5ms)
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:20:51 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (322.8ms)
+Completed 500 Internal Server Error in 325ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: [stdin]:7:1: unexpected if):
+    13:   <button type="button" id="prev">prev</button>
+    14:   <button type="button" id="next">next</button>
+    15: </div>
+    16: <%= javascript_include_tag('forms.js') %>
+  app/views/forms/teacher.html.erb:16:in `_app_views_forms_teacher_html_erb___2417340942038449957_70296621983240'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.9ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (17.2ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.2ms)
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:20:53 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (265.6ms)
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: [stdin]:7:1: unexpected if):
+    13:   <button type="button" id="prev">prev</button>
+    14:   <button type="button" id="next">next</button>
+    15: </div>
+    16: <%= javascript_include_tag('forms.js') %>
+  app/views/forms/teacher.html.erb:16:in `_app_views_forms_teacher_html_erb___2417340942038449957_70296621983240'
+
+
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/MartinKim/.rvm/gems/ruby-2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.9ms)
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:21:08 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (234.3ms)
+Completed 200 OK in 368ms (Views: 367.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:21:08 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:21:08 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:21:08 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:21:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:21:08 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:21:08 -0700
+
+
+Started GET "/assets/forms.self-9a30888844a964fef4aa426156b3cae370eec2eb62ebc7b180e19216e41cfc48.js?body=1" for ::1 at 2019-03-27 23:21:09 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:21:09 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:21:09 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:21:09 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:21:09 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:21:12 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 61ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/forms.self-9a30888844a964fef4aa426156b3cae370eec2eb62ebc7b180e19216e41cfc48.js?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:21:12 -0700
+
+
+Started GET "/assets/forms.self-9a30888844a964fef4aa426156b3cae370eec2eb62ebc7b180e19216e41cfc48.js?body=1" for ::1 at 2019-03-27 23:21:17 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:21:20 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:21:20 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:21:20 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:22:52 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (331.5ms)
+Completed 200 OK in 458ms (Views: 457.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/forms.self-245af5901ba4aea6538b851deca6137b6192bb7e1334e1ffc7ee4d8499a502d2.js?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:22:53 -0700
+
+
+Started GET "/assets/forms.self-245af5901ba4aea6538b851deca6137b6192bb7e1334e1ffc7ee4d8499a502d2.js?body=1" for ::1 at 2019-03-27 23:22:59 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:23:01 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:23:01 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:23:01 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:24:17 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (306.2ms)
+Completed 200 OK in 441ms (Views: 440.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/forms.self-5ed97cd984b93838e18dd384f9fb4aea230a2f4a4d59f181ca1dbba0f9e9aef2.js?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:24:18 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:24:20 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:24:20 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:24:20 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:24:58 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (210.8ms)
+Completed 200 OK in 363ms (Views: 362.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/forms.self-262cf4b552546167fb8469350ba1295b2022fa7045a3a0cdc788561ef6b39818.js?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:24:59 -0700
+
+
+Started GET "/assets/forms.self-262cf4b552546167fb8469350ba1295b2022fa7045a3a0cdc788561ef6b39818.js?body=1" for ::1 at 2019-03-27 23:25:24 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:25:26 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:25:26 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:25:26 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-27 23:27:12 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (430.4ms)
+Completed 200 OK in 633ms (Views: 632.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/forms.self-11911e84b6587ba921ffc3b7ebf298fb616fcabe79421841fd802faa5aeab542.js?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-27 23:27:13 -0700
+
+
+Started GET "/assets/forms.self-11911e84b6587ba921ffc3b7ebf298fb616fcabe79421841fd802faa5aeab542.js?body=1" for ::1 at 2019-03-27 23:27:15 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:27:17 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-27 23:27:17 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:27:17 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-30 14:48:47 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (447.7ms)
+Completed 200 OK in 558ms (Views: 549.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/forms.self-11911e84b6587ba921ffc3b7ebf298fb616fcabe79421841fd802faa5aeab542.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-04-05 14:59:57 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (255.8ms)
+Completed 200 OK in 417ms (Views: 409.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/forms.self-11911e84b6587ba921ffc3b7ebf298fb616fcabe79421841fd802faa5aeab542.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-04-07 14:40:18 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (285.3ms)
+Completed 200 OK in 417ms (Views: 409.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/forms.self-11911e84b6587ba921ffc3b7ebf298fb616fcabe79421841fd802faa5aeab542.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
