@@ -1565,3 +1565,120 @@ Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b93
 
 
 Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-27 23:27:17 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-03-30 14:48:47 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (447.7ms)
+Completed 200 OK in 558ms (Views: 549.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/forms.self-11911e84b6587ba921ffc3b7ebf298fb616fcabe79421841fd802faa5aeab542.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-03-30 14:48:48 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-04-05 14:59:57 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (255.8ms)
+Completed 200 OK in 417ms (Views: 409.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/forms.self-11911e84b6587ba921ffc3b7ebf298fb616fcabe79421841fd802faa5aeab542.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-04-05 14:59:57 -0700
+
+
+Started GET "/forms/teacher" for ::1 at 2019-04-07 14:40:18 -0700
+Processing by FormsController#teacher as HTML
+  Rendered forms/teacher.html.erb within layouts/application (285.3ms)
+Completed 200 OK in 417ms (Views: 409.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/application.self-aaf10ea69b555c08797b73c3843a463c7e27d111bac64f5ccaafbe20818fa903.css?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/forms.self-11911e84b6587ba921ffc3b7ebf298fb616fcabe79421841fd802faa5aeab542.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2019-04-07 14:40:18 -0700
