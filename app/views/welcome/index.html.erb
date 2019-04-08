@@ -1,10 +1,8 @@
 <div class="row">
-  <h1>I'm a:</h1>
+    <h1>I'm a:</h1>
 </div>
 <div class="row">
-    <%= button_to "Teacher", forms_teacher_url, method: :get %> 
-
-
-  <button class="col-md-3" type="button" name="button">Tutor</button>
-  <button class="col-md-3" type="button" name="button">Parent/Student</button>
+    <%= button_to "Teacher", forms_teacher_url, method: :get %>
+    <%= button_to "Tutor", forms_tutor_url, method: :get %>
+    <%= button_to "Parent", forms_parent_student_url, method: :get %> 
 </div>

@@ -1,2 +1,31 @@
-<h1>Forms#tutor</h1>
-<p>Find me in app/views/forms/tutor.html.erb</p>
+<div class="row title">
+  <h1>Tutor's Form</h1>
+</div>
+
+<div class="row">
+  <div class="question">
+    <form method='POST', action='/forms/tutor_next_q'>
+        <% if @q_page == 0  %>
+            <input type="text" name="question[name]" placeholder="Name" required>
+            <input type="email" name="question[email]" placeholder="Email" required>
+            <input type="number" name="question[id]" value="" placeholder="SID" required>
+            <input type="tel" name="question[phone]" value="" placeholder="Phone">
+            <input type="text" name="question[major]" value="" placeholder="Major">
+            <input type="text" name="question[minor]" value="" placeholder="Minor">
+            <input type="text" name="question[extra]" value="" placeholder="Involvement with other musical group">
+            <input type="text" name="question[time]" value="" placeholder="Family meeting time availability (ex. 12-13, 15-17)" required>
+            <input type="submit" value="Next">
+        <% end %>
+        <% if @q_page == 1  %>
+            <input type="text" name="question[name]" placeholder="Name" placeholder="Family meeting time availability (ex. 12-13, 15-17)" required>
+            <input type="submit" value="Next">
+        <% end %>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <button type="button" id="prev">prev</button>
+  <button type="button" id="next">next</button>
+</div>
+<%= javascript_include_tag('forms.js') %>
