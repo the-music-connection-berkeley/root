@@ -4,6 +4,10 @@ input {
     margin-top: 10px;
 }
 
+textarea {
+    margin-top: 3px;
+}
+
 form {
     width: 100%;
 }
