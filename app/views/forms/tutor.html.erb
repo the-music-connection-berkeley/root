@@ -4,28 +4,25 @@
 
 <div class="row">
   <div class="question">
-    <form method='POST', action='/forms/tutor_next_q' id='page-0 '>
-        <% if @q_page == 0  %>
-            <input type="text" name="question[name]" placeholder="Name" required>
-            <input type="email" name="question[email]" placeholder="Email" required>
-            <input type="number" name="question[id]" value="" placeholder="SID" required>
-            <input type="tel" name="question[phone]" value="" placeholder="Phone">
-            <input type="text" name="question[major]" value="" placeholder="Major">
-            <input type="text" name="question[minor]" value="" placeholder="Minor">
-            <textarea form ="page-0" name="question[extra]" cols="70" wrap="soft" placeholder="Involvement with other musical group"></textarea>
-            <textarea form ="page-0" name="question[time]" cols="70" wrap="soft" placeholder="Family meeting time availability (ex. 12-13, 15-17)" required></textarea>
-            <input type="submit" value="Next">
-        <% end %>
-        <% if @q_page == 1  %>
-            <input type="text" name="question[name]" placeholder="Name" placeholder="Family meeting time availability (ex. 12-13, 15-17)" required>
-            <input type="submit" value="Next">
-        <% end %>
+    <form method='POST', action='/forms/tutor_next_q'>
+      <div class="tab">
+        <input type="text" name="question[name]" placeholder="Name" required>
+        <input type="email" name="question[email]" placeholder="Email" required>
+        <input type="tel" name="question[phone]" placeholder="Phone">
+        <input type="text" name="question[major]" value="" placeholder="Major">
+        <input type="text" name="question[minor]" value="" placeholder="Minor">
+        <textarea name="question[extra]" rows="8" cols="80" placeholder="Involvement with other musical group"></textarea>
+        <textarea name="question[time]" rows="8" cols="80" placeholder="Family meeting time availability (ex. 12-13, 15-17)" required></textarea>
+      </div>
+      <input type="button" id="prev_btn" value="Previous">
+      <input type="button" id="next_btn" value="Next">
+      <input type="submit" id="sub_btn" value="Submit">
     </form>
   </div>
 </div>
 
-<div class="row">
+<!-- <div class="row">
   <button type="button" id="prev">prev</button>
   <button type="button" id="next">next</button>
-</div>
+</div> -->
 <%= javascript_include_tag('forms.js') %>
