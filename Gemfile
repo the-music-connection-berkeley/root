@@ -36,11 +36,11 @@ gem 'pusher'
 
 # part 2: Storing Sensitive Data
 gem 'attr_encrypted'
+gem 'pg', '~> 0.20' # use PostgreSQL in production (Heroku)
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3', '~> 1.3.0'
 end
 
 group :development do
@@ -52,7 +52,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg' # use PostgreSQL in production (Heroku)
   gem 'rails_12factor'  # Heroku-specific production settings
 end
 
