@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
 gem 'pusher'
 
+gem 'pg', '~> 0.18.4' # use PostgreSQL in production (Heroku)
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -40,7 +42,7 @@ gem 'attr_encrypted'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3', '~> 1.3.0'
+  # gem 'sqlite3', '~> 1.3.0'
 end
 
 group :development do
@@ -52,7 +54,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '~> 0.18.4' # use PostgreSQL in production (Heroku)
+  # gem 'pg', '~> 0.18.4' # use PostgreSQL in production (Heroku)
   gem 'rails_12factor'  # Heroku-specific production settings
 end
 
