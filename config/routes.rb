@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :tutors
+  resources :teachers
+  resources :students
   get 'forms/teacher'
 
   post 'forms/teacher' => 'forms#teacher'
