@@ -7,10 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<a href='/'>
   <div class="container logo">
       <%= image_tag "logo.png", :class => 'logo', :width=> "10%", :height => "5%" %>
-    <%= yield %>
   </div>
-
+</a>
+<div class="container">
+    <%= yield %>
+</div>
 </body>
 </html>
