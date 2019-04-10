@@ -61,7 +61,7 @@ function validate_form() {
       // and set the current valid status to false:
       valid = false;
     } else {
-      inputs[i].className -= " invalid";
+      inputs[i].className = "form-control";
     }
   }
   return valid; // return the valid status

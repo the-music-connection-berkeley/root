@@ -1,16 +1,6 @@
 class FormsController < ApplicationController
 
   def teacher
-      session[:question_number] = params[:inputs]
-      puts(params)
-      if (question_number == 1)
-          if params[:answers][question_numbewr] == "In-class"
-            cur_question_number = 3
-            redirect_to forms/teachers
-          else
-
-          end
-      end
   end
 
   def parent_student
