@@ -1,5 +1,6 @@
 var cur_tab = 0;
 var jump = 1;
+var array = new Array(); //history of the page traversal
 document.getElementById("sub_btn").style.display = "none";
 var tabs = document.getElementsByClassName("tab");
 for (i = 0; i < tabs.length; i++) {
@@ -12,8 +13,6 @@ function init() {
   var prev_btn = document.getElementById("prev_btn");
   var next_btn = document.getElementById("next_btn");
   var special_input3 = document.getElementById("special_input3");
-  window.history = new Array(1, 2, 3, 4);
-  console.log(history);
   // special_input3.addEventListener('click', function(){
   //   update_jump(3);
   // });
@@ -47,19 +46,19 @@ function show_tab(n) {
   }
 }
 
-function prev(history) {
+function prev() {
   var tabs = document.getElementsByClassName("tab");
   tabs[cur_tab].style.display = "none";
-  cur_tab = history.pop();
+  cur_tab = array.pop();
   show_tab(cur_tab);
 }
-function next(history) {
+function next() {
   if (!validate_form()) {
     return false;
   }
   var tabs = document.getElementsByClassName("tab");
   tabs[cur_tab].style.display = "none";
-  window.history.push(cur_tab);
+  array.push(cur_tab);
   cur_tab = cur_tab + jump;
   show_tab(cur_tab);
 }
