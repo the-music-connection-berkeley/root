@@ -1,24 +1,36 @@
-var tabs = document.getElementsByClassName("tab");
-var jump = 1;
 var cur_tab = 0;
+var jump = 1;
 document.getElementById("sub_btn").style.display = "none";
+var tabs = document.getElementsByClassName("tab");
 for (i = 0; i < tabs.length; i++) {
   tabs[i].style.display = "none";
 }
 show_tab(0);
+
 window.onload = init;
 function init() {
   var prev_btn = document.getElementById("prev_btn");
   var next_btn = document.getElementById("next_btn");
+  var special_input3 = document.getElementById("special_input3");
+  window.history = new Array(1, 2, 3, 4);
+  console.log(history);
+  // special_input3.addEventListener('click', function(){
+  //   update_jump(3);
+  // });
   prev_btn.addEventListener('click', function(){
-    prev_next(-1);
+    prev();
   });
   next_btn.addEventListener('click', function(){
-    prev_next(1);
+    next();
   });
 }
 
+function update_jump(n) {
+  jump = n;
+}
+
 function show_tab(n) {
+  jump = 1;
   var tabs = document.getElementsByClassName("tab");
   tabs[n].style.display = "block";
   if (n == 0) {
@@ -35,18 +47,25 @@ function show_tab(n) {
   }
 }
 
-function prev_next(n) {
-    n = document.getElementById("decision").style.display = "none";
-    if (n > 0 && !validate_form()) {
-      return false;
-    }
-    var tabs = document.getElementsByClassName("tab");
-    tabs[cur_tab].style.display = "none";
-    cur_tab = cur_tab + n;
-    show_tab(cur_tab);
+function prev(history) {
+  var tabs = document.getElementsByClassName("tab");
+  tabs[cur_tab].style.display = "none";
+  cur_tab = history.pop();
+  show_tab(cur_tab);
+}
+function next(history) {
+  if (!validate_form()) {
+    return false;
+  }
+  var tabs = document.getElementsByClassName("tab");
+  tabs[cur_tab].style.display = "none";
+  window.history.push(cur_tab);
+  cur_tab = cur_tab + jump;
+  show_tab(cur_tab);
 }
 
 function validate_form() {
+  return true //remove this when deploying
   var tab = document.getElementsByClassName("tab")[cur_tab];
   var inputs = tab.getElementsByTagName("input");
   var valid = true;
