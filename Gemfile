@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'pg', '~> 0.20' # use PostgreSQL in production (Heroku)
+
 # for secure stoage of API keys
 gem 'figaro'
 gem 'pusher'
@@ -54,7 +56,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '~> 0.20' # use PostgreSQL in production (Heroku)
+  
   gem 'rails_12factor'  # Heroku-specific production settings
 end
 
