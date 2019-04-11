@@ -7,12 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <img src="" alt="The logo of TMC">
-    </div>
-    <%= yield %>
+<a href='/'>
+  <div class="container logo">
+      <%= image_tag "logo.png", :class => 'logo', :width=> "10%", :height => "5%" %>
   </div>
-
+</a>
+<div class="container">
+    <%= yield %>
+</div>
 </body>
 </html>

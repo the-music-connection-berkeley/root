@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
 
+  resources :tutors
+  resources :teachers
+  resources :students
   get 'forms/teacher'
+
+  post 'forms/teacher' => 'forms#teacher'
+
+  post 'forms/tutor' => 'forms#tutor'
+
+  post 'forms/tutor_next_q' => 'forms#tutor_next_q'
 
   get 'forms/parent_student'
 

@@ -1,2 +1,17 @@
-<h1>Forms#parent_student</h1>
-<p>Find me in app/views/forms/parent_student.html.erb</p>
+<div class="row title">
+  <h1>Tutor's Form</h1>
+</div>
+
+<div class="row">
+  <div class="question">
+    <input type="text" name="" value="" placeholder="name">
+    <input type="text" name="" value="" placeholder="Email">
+    <input type="text" name="" value="" placeholder="SID">
+  </div>
+</div>
+
+<div class="row">
+  <button type="button" id="prev">prev</button>
+  <button type="button" id="next">next</button>
+</div>
+<%= javascript_include_tag('forms.js') %>

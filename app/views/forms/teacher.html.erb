@@ -2,15 +2,53 @@
   <h1>Teacher's Form</h1>
 </div>
 
-<div class="row">
-  <div class="question">
-    <h2>Question 1: What is your name?</h2>
-    <input type="text" name="" value="">
+<form method='POST', action='/forms/tutor_next_q'>
+  <div class="tab">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" name="question[name]" class="form-control" placeholder="ex. First Middle Last" required>
+      <small class="form-text text-muted">Please enter your full name here!</small>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="question[phone]" class="form-control" placeholder="ex. 000-000-0000">
+      <small class="form-text text-muted">Please enter your phone number here!</small>
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" name="question[email]" class="form-control" placeholder="ex. TMC@gmail.com" required>
+      <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="major">Major</label>
+      <input type="text" name="question[major]" class="form-control" placeholder="ex. Music, Art History">
+      <small class="form-text text-muted">Please enter your major(s) here!</small>
+    </div>
   </div>
-</div>
+  <div class="tab">
+    <div class="form-group">
+      <label for="Minor">Minor</label>
+      <input type="text" name="question[minor]" class="form-control" placeholder="ex. Computer Science, Statistics">
+      <small class="form-text text-muted">Please enter your minor(s) here!</small>
+    </div>
+    <div class="form-group">
+      <label for="extra">Experiences</label>
+      <input type="text" name="question[exp]" class="form-control" placeholder="ex. Dead Musician's Society">
+      <small class="form-text text-muted">If you have any involvement with other musical group, please write them down here!</small>
+    </div>
+    <div class="form-group">
+      <label for="extra">Time Availabilities</label><br>
+      <input type="datetime-local" name="question[time]">
+      <small class="form-text text-muted">Please enter your time availability!</small>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">I am a robot.</label>
+    </div>
+  </div>
+  <button type="button" id="prev_btn" class="btn btn-primary">Prev</button>
+  <button type="button" id="next_btn" class="btn btn-primary">Next</button>
+  <button type="submit" id="sub_btn" class="btn btn-primary">Submit</button>
+</form>
 
-<div class="row">
-  <button type="button" id="prev">prev</button>
-  <button type="button" id="next">next</button>
-</div>
 <%= javascript_include_tag('forms.js') %>
