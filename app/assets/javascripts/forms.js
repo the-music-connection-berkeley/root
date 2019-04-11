@@ -1,4 +1,5 @@
 var tabs = document.getElementsByClassName("tab");
+var jump = 1;
 var cur_tab = 0;
 document.getElementById("sub_btn").style.display = "none";
 for (i = 0; i < tabs.length; i++) {
@@ -16,9 +17,6 @@ function init() {
     prev_next(1);
   });
 }
-
-
-
 
 function show_tab(n) {
   var tabs = document.getElementsByClassName("tab");
@@ -38,7 +36,8 @@ function show_tab(n) {
 }
 
 function prev_next(n) {
-    if (n == 1 && !validate_form()) {
+    n = document.getElementById("decision").style.display = "none";
+    if (n > 0 && !validate_form()) {
       return false;
     }
     var tabs = document.getElementsByClassName("tab");
