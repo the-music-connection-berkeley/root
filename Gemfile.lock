@@ -43,6 +43,7 @@ GEM
     autoprefixer-rails (9.5.0)
       execjs
     backports (3.12.0)
+    bcrypt (3.1.12)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
     bootstrap (4.3.1)
@@ -289,6 +290,7 @@ PLATFORMS
 
 DEPENDENCIES
   attr_encrypted
+  bcrypt (~> 3.1.7)
   bootstrap (~> 4.3.1)
   bundler
   byebug
@@ -300,7 +302,11 @@ DEPENDENCIES
   guard-rspec
   jbuilder (~> 2.0)
   jquery-rails
+<<<<<<< HEAD
   pg (~> 0.20)
+=======
+  pg (~> 0.18.4)
+>>>>>>> 31a6863... Wrote form feature testing
   pusher
   rails (= 4.2.10)
   rails_12factor

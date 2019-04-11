@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
 
-  resources :tutors
-  resources :teachers
-  resources :students
+  resources :users
+  resources :users
+  resources :users
+  get 'sessions/new'
+
+  get    '/login',   to: 'sessions#new'
+
+  post   '/login',   to: 'sessions#create'
+
+  delete '/logout',  to: 'sessions#destroy'
+
   get 'forms/teacher'
 
   post 'forms/teacher' => 'forms#teacher'
