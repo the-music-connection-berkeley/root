@@ -12,20 +12,24 @@ window.onload = init;
 function init() {
   var prev_btn = document.getElementById("prev_btn");
   var next_btn = document.getElementById("next_btn");
-  var special_input3 = document.getElementById("special_input3");
-  // special_input3.addEventListener('click', function(){
-  //   update_jump(3);
-  // });
   prev_btn.addEventListener('click', function(){
     prev();
   });
   next_btn.addEventListener('click', function(){
     next();
   });
-}
 
-function update_jump(n) {
-  jump = n;
+  var jump_group0 = document.getElementById("jump-group0");
+  var radios0 = jump_group0.getElementsByTagName('input');
+  for (var i = 0; i < radios0.length; i++) {
+    radios0[i].onclick = function() {
+      if (this.value == "Yes") {
+        jump = 1;
+      } else {
+        jump = 2;
+      }
+    }
+  }
 }
 
 function show_tab(n) {
