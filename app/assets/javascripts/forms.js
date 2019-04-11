@@ -1,4 +1,4 @@
-var cur_tab = 0;
+var cur_tab = 1;
 var jump = 1;
 var array = new Array(); //history of the page traversal
 document.getElementById("sub_btn").style.display = "none";
@@ -6,7 +6,7 @@ var tabs = document.getElementsByClassName("tab");
 for (i = 0; i < tabs.length; i++) {
   tabs[i].style.display = "none";
 }
-show_tab(0);
+show_tab(cur_tab);
 
 window.onload = init;
 function init() {
@@ -68,21 +68,47 @@ function next() {
 }
 
 function validate_form() {
-  return true //remove this when deploying
   var tab = document.getElementsByClassName("tab")[cur_tab];
   var inputs = tab.getElementsByTagName("input");
   var valid = true;
+
+  // Need to check for existence of radio groups, and do seperate
+  // validation.
+  var radio_groups = tab.getElementsByClassName("radio-group");
+  for (var i = 0; i < radio_groups.length; i++) {
+    var cnt = 0;
+    var radios = radio_groups[i].getElementsByTagName("input");
+    for (var j = 0; j < radios.length; j++) {
+      if (radios[i].checked) {
+        cnt = cnt + 1;
+      }
+    }
+    if (cnt == 0) {
+      radio_groups[i].className += " invalid";
+      radio_groups[i].getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
+      valid = false;
+    } else {
+      radio_groups[i].className += "form-control";
+      
+    }
+  }
+
   // A loop that checks every input field in the current tab:
   for (i = 0; i < inputs.length; i++) {
     // If a field is empty...
-    if (inputs[i].value == "") {
-      // add an "invalid" class to the field:
-      inputs[i].className += " invalid";
-      inputs[i].placeholder = "Please fill out this field.";
-      // and set the current valid status to false:
-      valid = false;
+    if (inputs[i].type == "radio") {
+
     } else {
-      inputs[i].className = "form-control";
+      if (inputs[i].value == "") {
+        // add an "invalid" class to the field:
+        inputs[i].className += " invalid";
+        inputs[i].placeholder = "Please fill out this field.";
+
+        // and set the current valid status to false:
+        valid = false;
+      } else {
+        inputs[i].className = "form-control";
+      }
     }
   }
   return valid; // return the valid status
