@@ -36,7 +36,6 @@ function show_tab(n) {
 }
 
 function prev_next(n) {
-    n = document.getElementById("decision").style.display = "none";
     if (n > 0 && !validate_form()) {
       return false;
     }
