@@ -72,14 +72,13 @@ function validate_form() {
   var inputs = tab.getElementsByTagName("input");
   var valid = true;
 
-  // Need to check for existence of radio groups, and do seperate
-  // validation.
+  // Radio Groups Validation
   var radio_groups = tab.getElementsByClassName("radio-group");
   for (var i = 0; i < radio_groups.length; i++) {
     var cnt = 0;
     var radios = radio_groups[i].getElementsByTagName("input");
     for (var j = 0; j < radios.length; j++) {
-      if (radios[i].checked) {
+      if (radios[j].checked) {
         cnt = cnt + 1;
       }
     }
@@ -89,16 +88,15 @@ function validate_form() {
       valid = false;
     } else {
       radio_groups[i].className += "form-control";
-      
+      valid = true;
+      break;
     }
   }
 
   // A loop that checks every input field in the current tab:
   for (i = 0; i < inputs.length; i++) {
     // If a field is empty...
-    if (inputs[i].type == "radio") {
-
-    } else {
+    if (inputs[i].type != "radio") {
       if (inputs[i].value == "") {
         // add an "invalid" class to the field:
         inputs[i].className += " invalid";
