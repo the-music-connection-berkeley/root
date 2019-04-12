@@ -30,6 +30,18 @@ function init() {
       }
     }
   }
+  var jump_group1 = document.getElementById("jump-group1");
+  var radios1 = jump_group1.getElementsByTagName('input');
+  for (var i = 0; i < radios1.length; i++) {
+    radios1[i].onclick = function() {
+      if (this.value == "Yes") {
+        jump = 1;
+      } else {
+        jump = 2;
+      }
+    }
+  }
+
 }
 
 function show_tab(n) {
@@ -85,29 +97,47 @@ function validate_form() {
     if (cnt == 0) {
       radio_groups[i].className += " invalid";
       radio_groups[i].getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
-      valid = false;
+      return false;
     } else {
       radio_groups[i].className += "form-control";
-      valid = true;
-      break;
     }
   }
 
+  // Checkbox Group Validation
+  var checkbox_groups = tab.getElementsByClassName("checkbox-group");
+  for (var i = 0; i < checkbox_groups.length; i++) {
+    var cnt = 0;
+    var checkboxes = checkbox_groups[i].getElementsByTagName("input");
+    for (var j = 0; j < radios.length; j++) {
+      if (checkboxes[j].checked) {
+        cnt = cnt + 1;
+      }
+    }
+    if (cnt == 0) {
+      checkbox_groups[i].className += " invalid";
+      checkbox_groups[i].getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
+      return false;
+    } else {
+      checkbox_groups[i].className += "form-control";
+    }
+  }
   // A loop that checks every input field in the current tab:
   for (i = 0; i < inputs.length; i++) {
     // If a field is empty...
-    if (inputs[i].type != "radio") {
-      if (inputs[i].value == "") {
-        // add an "invalid" class to the field:
-        inputs[i].className += " invalid";
-        inputs[i].placeholder = "Please fill out this field.";
-
-        // and set the current valid status to false:
-        valid = false;
-      } else {
-        inputs[i].className = "form-control";
-      }
+    if (inputs[i].type == "radio" || inputs[i].type == "checkbox") {
+      continue;
     }
+    if (inputs[i].value == "") {
+      // add an "invalid" class to the field:
+      inputs[i].className += " invalid";
+      inputs[i].placeholder = "Please fill out this field.";
+
+      // and set the current valid status to false:
+      valid = false;
+    } else {
+      inputs[i].className = "form-control";
+    }
+
   }
   return valid; // return the valid status
 }
