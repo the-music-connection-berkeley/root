@@ -10,6 +10,7 @@ show_tab(cur_tab);
 
 window.onload = init;
 function init() {
+  document.querySelector('form').onkeypress = checkEnter;
   var prev_btn = document.getElementById("prev_btn");
   var next_btn = document.getElementById("next_btn");
   prev_btn.addEventListener('click', function(){
@@ -70,6 +71,12 @@ function init() {
     });
   }
 
+}
+
+function checkEnter(e){
+ e = e || event;
+ var txtArea = /textarea/i.test((e.target || e.srcElement).tagName);
+ return txtArea || (e.keyCode || e.which || e.charCode || 0) !== 13;
 }
 
 function display_other(val) {
