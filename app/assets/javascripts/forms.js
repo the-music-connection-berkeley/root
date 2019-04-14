@@ -20,28 +20,66 @@ function init() {
   });
 
   var jump_group0 = document.getElementById("jump-group0");
-  var radios0 = jump_group0.getElementsByTagName('input');
-  for (var i = 0; i < radios0.length; i++) {
-    radios0[i].onclick = function() {
-      if (this.value == "Yes") {
-        jump = 1;
-      } else {
-        jump = 2;
-      }
-    }
-  }
-  var jump_group1 = document.getElementById("jump-group1");
-  var radios1 = jump_group1.getElementsByTagName('input');
-  for (var i = 0; i < radios1.length; i++) {
-    radios1[i].onclick = function() {
-      if (this.value == "Yes") {
-        jump = 1;
-      } else {
-        jump = 2;
+  if (jump_group0 != null) {
+    var radios = jump_group0.getElementsByTagName('input');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].onclick = function() {
+        if (this.value == "Yes") {
+          jump = 1;
+        } else {
+          jump = 2;
+        }
       }
     }
   }
 
+  var jump_group1 = document.getElementById("jump-group1");
+  if (jump_group1 != null) {
+    var radios = jump_group.getElementsByTagName('input');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].onclick = function() {
+        if (this.value == "Yes") {
+          jump = 1;
+        } else {
+          jump = 2;
+        }
+      }
+    }
+  }
+
+  var jump_group2 = document.getElementById("jump-group2");
+  if (jump_group2 != null) {
+    var radios = jump_group.getElementsByTagName('input');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].onclick = function() {
+        if (this.value == "Yes") {
+          jump = 1;
+        } else {
+          jump = 2;
+        }
+      }
+    }
+  }
+
+
+  var instrument = document.getElementById("instrument");
+  if (instrument != null) {
+    console.log("hi");
+    instrument.addEventListener('change', function(){
+      display_other(instrument.value);
+    });
+  }
+
+}
+
+function display_other(val) {
+  console.log("hello");
+  var elem = document.getElementById("instr_other");
+  if (val == "Others") {
+    elem.style.display = 'block';
+  } else {
+    elem.style.display = 'none';
+  }
 }
 
 function show_tab(n) {
@@ -80,6 +118,7 @@ function next() {
 }
 
 function validate_form() {
+  return true;
   var tab = document.getElementsByClassName("tab")[cur_tab];
   var inputs = tab.getElementsByTagName("input");
   var valid = true;
@@ -137,7 +176,6 @@ function validate_form() {
     } else {
       inputs[i].className = "form-control";
     }
-
   }
   return valid; // return the valid status
 }
