@@ -1,5 +1,4 @@
 class FormsController < ApplicationController
-
   def teacher
   end
 
@@ -12,8 +11,19 @@ class FormsController < ApplicationController
       render 'tutor'
   end
 
-  def tutor_next_q
-      @q_page = session[:q_page] + 1
-      render 'tutor'
+  def teacher_submit
+      puts "SUBMIT!"
+      redirect_to '/'
   end
+
+  def student_submit
+      puts "SUBMIT!"
+      redirect_to '/'
+  end
+
+  def tutor_submit
+    puts "SUBMIT!"
+    redirect_to '/'
+  end
+  
 end
