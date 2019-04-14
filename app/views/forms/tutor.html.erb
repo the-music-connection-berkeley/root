@@ -3,6 +3,7 @@
 </div>
 
 <form method='POST', action='/forms/tutor_next_q'>
+  <div class="tab">
     <div class="form-group">
       <label for="question[name]">Name</label>
       <input type="text" name="question[name]" class="form-control" placeholder="ex. First Middle Last" required>
@@ -44,15 +45,137 @@
       <small class="form-text text-muted">If you have any involvement with other musical group, please write them down here!</small>
     </div>
     <div class="form-group">
-      <label for="extra">Time Availabilities</label><br>
+      <label>Time Availabilities</label><br>
       <!-- <input type="datetime-local" name="question[time]"> -->
-      <input type="checkbox" name="question[time0]" value="0">      Mondays 3PM ~ 4PM  <br>
+      <input type="checkbox" name="question[time0]" value="1">      Mondays 3PM ~ 4PM  <br>
       <input type="checkbox" name="question[time1]" value="1">      Tuesdays 5PM ~ 6PM <br>
-      <input type="checkbox" name="question[time2]" value="2">      Fridays 4PM ~ 5PM <br>
+      <input type="checkbox" name="question[time2]" value="1">      Fridays 4PM ~ 5PM <br>
       <small class="form-text text-muted">Please enter your time availability!</small>
     </div>
+  </div>
 
+  <div class="tab">
+    <div class="form-group radio-group" id="jump-group0">
+      <label for="question[in_class]">In Class</label> <br>
+      <input type="radio" name="question[in_class]" value="Yes"">      Yes
+      <input type="radio" name="question[in_class]" value="No">      No <br>
+      <small class="form-text text-muted">Select yes if you are planning to teach in class.</small>
+    </div>
+  </div>
 
+  <div class="tab">
+    <div class="form-group">
+      <label>Instrument</label><br>
+      <input type="checkbox" name="question[inst0]" value="1">      Cello  <br>
+      <input type="checkbox" name="question[inst1]" value="1">      Tuba <br>
+      <input type="checkbox" name="question[inst2]" value="1">      Drums <br>
+      <small class="form-text text-muted">Please enter the instruments you can tutor</small>
+    </div>
+    <div class="form-group">
+      <label>Time Availability</label><br>
+      <input type="checkbox" name="question[time0]" value="1">      Mondays 2PM ~ 3PM   <br>
+      <input type="checkbox" name="question[time1]" value="1">      Tuesday 2PM ~ 3PM  <br>
+      <input type="checkbox" name="question[time2]" value="1">      Mondays 5PM ~ 6PM  <br>
+      <small class="form-text text-muted">Please enter the time ranges you can tutor</small>
+    </div>
+    <div class="form-group">
+      <label>Preferred Grade Levels</label><br>
+      <input type="checkbox" name="question[grade0]" value="1">      Grade 3~5   <br>
+      <input type="checkbox" name="question[grade1]" value="1">      Grade 6~8  <br>
+      <input type="checkbox" name="question[grade2]" value="1">      Grade 9-11  <br>
+      <small class="form-text text-muted">Please enter the time ranges you can tutor</small>
+    </div>
+  </div>
+
+  <div class="tab">
+    <div class="form-group radio-group" id="jump-group1">
+      <label>Private Piano or Vocal?</label> <br>
+      <input type="radio" name="question[private_piano]" value="Yes"">      Yes
+      <input type="radio" name="question[private_piano]" value="No">      No <br>
+      <small class="form-text text-muted">Select Yes if you are doing private piano or vocal tutoring.</small>
+    </div>
+  </div>
+
+  <div class="tab">
+    <div class="form-group">
+      <label>Piano or Vocal?</label><br>
+      <input type="checkbox" name="question[pinao]" value="1">      Piano  <br>
+      <input type="checkbox" name="question[pinao]" value="0">      Vocal  <br>
+      <small class="form-text text-muted">Select if you are doing private piano or vocal tutoring.</small>
+    </div>
+    <div class="form-group">
+      <label>Time Availability</label><br>
+      <input type="checkbox" name="question[time0]" value="1">      Mondays 2PM ~ 3PM   <br>
+      <input type="checkbox" name="question[time1]" value="1">      Tuesday 2PM ~ 3PM  <br>
+      <input type="checkbox" name="question[time2]" value="1">      Mondays 5PM ~ 6PM  <br>
+      <small class="form-text text-muted">Please enter the time ranges you can tutor</small>
+    </div>
+    <div class="form-group">
+      <label>Preferred Grade Levels</label><br>
+      <input type="checkbox" name="question[grade0]" value="1">      Grade 3~5   <br>
+      <input type="checkbox" name="question[grade1]" value="1">      Grade 6~8  <br>
+      <input type="checkbox" name="question[grade2]" value="1">      Grade 9-11  <br>
+      <small class="form-text text-muted">Please enter the time ranges you can tutor</small>
+    </div>
+  </div>
+
+  <div class="tab">
+    <div class="">
+      <h4>Member Commitment Policy</h4>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+    </div>
+    <div class="">
+      <h4>Attendance Policy</h4>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+    </div>
+    <div class="form-group">
+      <label>Member Commitment Policy</label><br>
+      <input type="checkbox" name="question[policy]" value="1">      I have read and agree to the policy.  <br>
+      <small class="form-text text-muted">This is mandatory.</small>
+    </div>
+    <div class="form-group">
+      <label>Attendance Policy</label><br>
+      <input type="checkbox" name="question[policy]" value="1">      I have read and agree to the policy.  <br>
+      <small class="form-text text-muted">This is mandatory.</small>
+    </div>
+  </div>
+
+  <div class="tab">
+    <div class="form-group">
+      <label>Returning or New</label><br>
+      <input type="checkbox" name="question[pinao]" value="1">      Returning  <br>
+      <input type="checkbox" name="question[pinao]" value="0">      New  <br>
+      <small class="form-text text-muted">Select Yes if you are a returning tutor.</small>
+    </div>
+  </div>
+
+  <div class="tab">
+    <h4>Public Service Center Volunteer Questions</h4>
+    <div class="form-group">
+      <label for="question[name]">PSC Q1</label>
+      <input type="text" name="question[name]" class="form-control" placeholder="ex. First Middle Last" required>
+      <small class="form-text text-muted">Please enter your full name here!</small>
+    </div>
+    <div class="form-group">
+      <label for="question[email]">PSC Q2</label>
+      <input type="email" name="question[email]" class="form-control" placeholder="ex. TMC@gmail.com" required>
+      <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div><div class="form-group">
+      <label for="question[sid]">PSC Q3</label>
+      <input type="text" name="question[sid]" class="form-control" placeholder="ex. 3032179600">
+      <small class="form-text text-muted">Please enter your SID here!</small>
+    </div>
+  </div>
+
+  <div class="tab">
+    <div class="form-group">
+      <label>Sign up for an Interview</label><br>
+      <input type="checkbox" name="question[time0]" value="1">      Mondays 2PM ~ 3PM   <br>
+      <input type="checkbox" name="question[time1]" value="1">      Tuesday 2PM ~ 3PM  <br>
+      <input type="checkbox" name="question[time2]" value="1">      Mondays 5PM ~ 6PM  <br>
+      <small class="form-text text-muted">Please enter the time ranges you can interview.</small>
+    </div>
+  </div>
 
   <!-- <div class="form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">

@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+.radio-group.invalid {
+  background-color: pink;
+}
+
 input.invalid {
   background-color: #ffdddd;
 }
