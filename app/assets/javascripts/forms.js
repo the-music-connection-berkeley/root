@@ -1,4 +1,4 @@
-var cur_tab = 0;
+var cur_tab = 6;
 var jump = 1;
 var array = new Array(); //history of the page traversal
 document.getElementById("sub_btn").style.display = "none";
@@ -36,7 +36,7 @@ function init() {
 
   var jump_group1 = document.getElementById("jump-group1");
   if (jump_group1 != null) {
-    var radios = jump_group.getElementsByTagName('input');
+    var radios = jump_group1.getElementsByTagName('input');
     for (var i = 0; i < radios.length; i++) {
       radios[i].onclick = function() {
         if (this.value == "Yes") {
@@ -50,10 +50,10 @@ function init() {
 
   var jump_group2 = document.getElementById("jump-group2");
   if (jump_group2 != null) {
-    var radios = jump_group.getElementsByTagName('input');
+    var radios = jump_group2.getElementsByTagName('input');
     for (var i = 0; i < radios.length; i++) {
       radios[i].onclick = function() {
-        if (this.value == "Yes") {
+        if (this.value == "Returning") {
           jump = 1;
         } else {
           jump = 2;
@@ -98,7 +98,7 @@ function show_tab(n) {
   } else {
     document.getElementById("prev_btn").style.display = "inline";
   }
-  if (n == (tabs.length - 1)) {
+  if (n == (tabs.length - 1) || tabs[n] == document.getElementById("return_q")) {
     document.getElementById("sub_btn").style.display = "inline";
     document.getElementById("next_btn").style.display = "none";
   } else {
