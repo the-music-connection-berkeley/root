@@ -49,43 +49,38 @@
         <option>12</option>
       </select>
     </div>
-    <div class="tab">
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="question[instrument]" value="option1" checked>
-        <label class="form-check-label" for="instrument">
-        Piano
-        </label>
+  </div>
+  <div class="tab">
+      <div class="form-group">
+        <label>Instrument</label>
+        <select class="form-control" name="question[instrument]" id="instrument">
+          <option value="Violin">Violin</option>
+          <option value="Cello">Cello</option>
+          <option value="Guitar">Guitar</option>
+          <option value="Piano">Piano</option>
+          <option value="Others" >Others</option>
+        </select>
+        <input type="text" id="instr_other" style="display:none;" name="question[instrument]" placeholder="Specify instrument">
+        <small class="form-text text-muted">Select an instrument you/your child would like to be tutored for.</small>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="question[instrument]" value="option2">
-        <label class="form-check-label" for="instrument">
-        Second default radio
-        </label>
-      </div>
-      <div class="form-check disabled">
-        <input class="form-check-input" type="radio" name="question[instrument]" value="option3">
-        <label class="form-check-label" for="instrument">
-        Disabled radio
-        </label>
-      </div>
-    </div>
-    <div class="tab">
+  </div>
+  <div class="tab">
       <div class="form-group">
         <label for="extra">Experiences</label>
         <input type="text" name="question[exp]" class="form-control" placeholder="ex. Dead Musician's Society">
         <small class="form-text text-muted">If you have any involvement with other musical group, please write them down here!</small>
       </div>
-    </div>
-    <div class="tab">
+  </div>
+  <div class="tab">
       <div class="form-group">
-        <label for="pastapp">Applied to TMC before?</label>
+        <label>Applied to TMC before?</label>
         <select class="form-control" name="question[pastapp]">
           <option>No</option>
           <option>Yes</option>
         </select>
       </div>
-    </div>
-    <div class="tab">
+  </div>
+  <div class="tab">
       <div class="form-group">
         <label for="lunch">Do you qualify for free/reduced lunch?</label>
         <select class="form-control" name="question[lunch]">
@@ -93,20 +88,10 @@
           <option>Yes</option>
         </select>
       </div>
-    </div>
-    
-    
-    <div class="form-group">
-      <label for="extra">Time Availabilities</label><br>
-      <input type="datetime-local" name="question[time]">
-      <small class="form-text text-muted">Please enter your time availability!</small>
-    </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">I am a robot.</label>
-    </div>
   </div>
-  
+
+
+
   <button type="button" id="prev_btn" class="btn btn-primary">Prev</button>
   <button type="button" id="next_btn" class="btn btn-primary">Next</button>
   <button type="submit" id="sub_btn" class="btn btn-primary">Submit</button>
