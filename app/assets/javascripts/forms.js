@@ -21,9 +21,9 @@ function init() {
 
   var jump_group0 = document.getElementById("jump-group0");
   if (jump_group0 != null) {
-    var radios0 = jump_group0.getElementsByTagName('input');
-    for (var i = 0; i < radios0.length; i++) {
-      radios0[i].onclick = function() {
+    var radios = jump_group0.getElementsByTagName('input');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].onclick = function() {
         if (this.value == "Yes") {
           jump = 1;
         } else {
@@ -35,9 +35,23 @@ function init() {
 
   var jump_group1 = document.getElementById("jump-group1");
   if (jump_group1 != null) {
-    var radios1 = jump_group1.getElementsByTagName('input');
-    for (var i = 0; i < radios1.length; i++) {
-      radios1[i].onclick = function() {
+    var radios = jump_group.getElementsByTagName('input');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].onclick = function() {
+        if (this.value == "Yes") {
+          jump = 1;
+        } else {
+          jump = 2;
+        }
+      }
+    }
+  }
+
+  var jump_group2 = document.getElementById("jump-group2");
+  if (jump_group2 != null) {
+    var radios = jump_group.getElementsByTagName('input');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].onclick = function() {
         if (this.value == "Yes") {
           jump = 1;
         } else {
