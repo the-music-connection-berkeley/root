@@ -30,18 +30,6 @@ function init() {
       }
     }
   }
-  var jump_group1 = document.getElementById("jump-group1");
-  var radios1 = jump_group1.getElementsByTagName('input');
-  for (var i = 0; i < radios1.length; i++) {
-    radios1[i].onclick = function() {
-      if (this.value == "Yes") {
-        jump = 1;
-      } else {
-        jump = 2;
-      }
-    }
-  }
-
 }
 
 function show_tab(n) {
