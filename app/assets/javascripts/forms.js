@@ -1,4 +1,4 @@
-var cur_tab = 0;
+var cur_tab = 1;
 var jump = 1;
 var array = new Array(); //history of the page traversal
 document.getElementById("sub_btn").style.display = "none";
@@ -18,6 +18,27 @@ function init() {
   });
   next_btn.addEventListener('click', function(){
     next();
+  });
+
+  var instrument = document.getElementsByClassName("instrument")[0];
+  if (instrument != null) {
+    instrument.addEventListener('change', function(){
+      display_other(instrument.value);
+    });
+  }
+
+  var add_instr = document.getElementById("add_instr");
+  add_instr.addEventListener('click', function() {
+    var len = document.getElementsByClassName("instrument").length;
+    var instrument = document.getElementsByClassName("instrument")[len - 1];
+    var cln = instrument.cloneNode(true);
+
+    if (cln != null) {
+      cln.addEventListener('change', function(){
+        display_other(cln.value);
+      });
+    }
+    document.getElementById("instruments").appendChild(cln);
   });
 
   var jump_group0 = document.getElementById("jump-group0");
@@ -63,13 +84,7 @@ function init() {
   }
 
 
-  var instrument = document.getElementById("instrument");
-  if (instrument != null) {
-    console.log("hi");
-    instrument.addEventListener('change', function(){
-      display_other(instrument.value);
-    });
-  }
+
 
 }
 
@@ -80,8 +95,9 @@ function checkEnter(e){
 }
 
 function display_other(val) {
-  console.log("hello");
-  var elem = document.getElementById("instr_other");
+  var len = document.getElementsByClassName("instr_other").length;
+  console.log(len);
+  var elem = document.getElementsByClassName("instr_other")[len - 1];
   if (val == "Others") {
     elem.style.display = 'block';
   } else {
