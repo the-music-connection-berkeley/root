@@ -12,16 +12,13 @@ class FormsController < ApplicationController
   end
 
   def teacher_submit
-
       name = params[:question][:teacher_name]
       phone = params[:question][:phone]
       email = params[:question][:email]
-
       teacher = Teacher.new
       teacher.attributes = {name: name, phone: phone, email: email}
       teacher.save!
-
-      redirect_to '/'
+      render 'thank_you'
   end
 
   def student_submit
