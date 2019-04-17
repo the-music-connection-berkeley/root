@@ -23,20 +23,26 @@ function init() {
   var instrument = document.getElementsByClassName("instrument")[0];
   if (instrument != null) {
     instrument.addEventListener('change', function(){
-      display_other(instrument.value);
+      display_other(instrument);
     });
   }
 
   var add_instr = document.getElementById("add_instr");
   add_instr.addEventListener('click', function() {
-    var len = document.getElementsByClassName("instrument").length;
-    var instrument = document.getElementsByClassName("instrument")[len - 1];
-    var cln = instrument.cloneNode(true);
+    var original = document.getElementsByClassName("instrument")[0];
+    var cln = original.cloneNode(true);
 
     if (cln != null) {
       cln.addEventListener('change', function(){
-        display_other(cln.value);
+        display_other(cln);
       });
+    }
+    var other = cln.getElementsByClassName("instr_other")[0];
+    var val = cln.getElementsByTagName("select")[0].value;
+    if (val == "Others") {
+      other.style.display = 'block';
+    } else {
+      other.style.display = 'none';
     }
     document.getElementById("instruments").appendChild(cln);
   });
@@ -84,8 +90,6 @@ function init() {
   }
 
 
-
-
 }
 
 function checkEnter(e){
@@ -94,14 +98,13 @@ function checkEnter(e){
  return txtArea || (e.keyCode || e.which || e.charCode || 0) !== 13;
 }
 
-function display_other(val) {
-  var len = document.getElementsByClassName("instr_other").length;
-  console.log(len);
-  var elem = document.getElementsByClassName("instr_other")[len - 1];
+function display_other(elem) {
+  var other = elem.getElementsByClassName("instr_other")[0];
+  var val = elem.getElementsByTagName("select")[0].value;
   if (val == "Others") {
-    elem.style.display = 'block';
+    other.style.display = 'block';
   } else {
-    elem.style.display = 'none';
+    other.style.display = 'none';
   }
 }
 

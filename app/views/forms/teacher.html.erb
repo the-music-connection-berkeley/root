@@ -58,14 +58,16 @@
     <div class="form-group">
       <div id="instruments">
         <label>Instrument</label>
-        <select class="form-control instrument" name="question[instrument]">
-          <option value="Violin">Violin</option>
-          <option value="Cello">Cello</option>
-          <option value="Guitar">Guitar</option>
-          <option value="Piano">Piano</option>
-          <option value="Others" >Others</option>
+        <div class="instrument">
+          <select class="form-control" name="question[instrument]">
+            <option value="Violin">Violin</option>
+            <option value="Cello">Cello</option>
+            <option value="Guitar">Guitar</option>
+            <option value="Piano">Piano</option>
+            <option value="Others" >Others</option>
+          </select>
           <input class="form-control instr_other" type="text" style="display:none;" name="question[instrument]" placeholder="Specify instrument">
-        </select>
+        </div>
 
       </div>
       <small class="form-text text-muted">Select the instruments you are requesting.</small>
