@@ -1,4 +1,4 @@
-var cur_tab = 1;
+var cur_tab = 0;
 var jump = 1;
 var array = new Array(); //history of the page traversal
 document.getElementById("sub_btn").style.display = "none";

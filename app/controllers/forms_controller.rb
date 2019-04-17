@@ -1,4 +1,8 @@
 class FormsController < ApplicationController
+  def index
+    redirect_to '/'
+  end
+
   def teacher
   end
 
@@ -23,12 +27,12 @@ class FormsController < ApplicationController
 
   def student_submit
       puts "SUBMIT!"
-      redirect_to '/'
+      render 'thank_you'
   end
 
   def tutor_submit
     puts "SUBMIT!"
-    redirect_to '/'
+    render 'thank_you'
   end
 
 end

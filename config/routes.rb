@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'admin' => 'admin#home'
+  get 'admin/close_form'
+
+  get 'admin/generate_matches'
+
+  get 'admin/results'
+
+
+  get '/forms' => 'forms#index'
+
   resources :tutors
   resources :teachers
   resources :students
