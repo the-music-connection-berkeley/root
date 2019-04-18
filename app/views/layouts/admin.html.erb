@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TMC</title>
+  <title>Admin Page</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <br>
-<a href='/'>
-  <div class="container logo">
-      <%= image_tag "logo.png", :class => 'logo', :width=> "10%", :height => "5%" %>
-  </div>
-</a>
+<div class="row">
+  <a href='/' >
+    <div class="container logo">
+        <%= image_tag "logo.png", :class => 'logo', :width=> "10%", :height => "5%" %>
+    </div>
+  </a>
+  <h3>Admin Page</h3>
+</div>
+
 <div class="container">
     <%= yield %>
 </div>

@@ -10,6 +10,7 @@ show_tab(cur_tab);
 
 window.onload = init;
 function init() {
+  document.querySelector('form').onkeypress = checkEnter;
   var prev_btn = document.getElementById("prev_btn");
   var next_btn = document.getElementById("next_btn");
   prev_btn.addEventListener('click', function(){
@@ -19,29 +20,92 @@ function init() {
     next();
   });
 
-  var jump_group0 = document.getElementById("jump-group0");
-  var radios0 = jump_group0.getElementsByTagName('input');
-  for (var i = 0; i < radios0.length; i++) {
-    radios0[i].onclick = function() {
-      if (this.value == "Yes") {
-        jump = 1;
-      } else {
-        jump = 2;
-      }
-    }
+  var instrument = document.getElementsByClassName("instrument")[0];
+  if (instrument != null) {
+    instrument.addEventListener('change', function(){
+      display_other(instrument);
+    });
   }
-  var jump_group1 = document.getElementById("jump-group1");
-  var radios1 = jump_group1.getElementsByTagName('input');
-  for (var i = 0; i < radios1.length; i++) {
-    radios1[i].onclick = function() {
-      if (this.value == "Yes") {
-        jump = 1;
-      } else {
-        jump = 2;
+
+  var add_instr = document.getElementById("add_instr");
+  add_instr.addEventListener('click', function() {
+    var original = document.getElementsByClassName("instrument")[0];
+    var cln = original.cloneNode(true);
+
+    if (cln != null) {
+      cln.addEventListener('change', function(){
+        display_other(cln);
+      });
+    }
+    var other = cln.getElementsByClassName("instr_other")[0];
+    var val = cln.getElementsByTagName("select")[0].value;
+    if (val == "Others") {
+      other.style.display = 'block';
+    } else {
+      other.style.display = 'none';
+    }
+    document.getElementById("instruments").appendChild(cln);
+  });
+
+  var jump_group0 = document.getElementById("jump-group0");
+  if (jump_group0 != null) {
+    var radios = jump_group0.getElementsByTagName('input');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].onclick = function() {
+        if (this.value == "Yes") {
+          jump = 1;
+        } else {
+          jump = 2;
+        }
       }
     }
   }
 
+  var jump_group1 = document.getElementById("jump-group1");
+  if (jump_group1 != null) {
+    var radios = jump_group1.getElementsByTagName('input');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].onclick = function() {
+        if (this.value == "Yes") {
+          jump = 1;
+        } else {
+          jump = 2;
+        }
+      }
+    }
+  }
+
+  var jump_group2 = document.getElementById("jump-group2");
+  if (jump_group2 != null) {
+    var radios = jump_group2.getElementsByTagName('input');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].onclick = function() {
+        if (this.value == "Returning") {
+          jump = 1;
+        } else {
+          jump = 2;
+        }
+      }
+    }
+  }
+
+
+}
+
+function checkEnter(e){
+ e = e || event;
+ var txtArea = /textarea/i.test((e.target || e.srcElement).tagName);
+ return txtArea || (e.keyCode || e.which || e.charCode || 0) !== 13;
+}
+
+function display_other(elem) {
+  var other = elem.getElementsByClassName("instr_other")[0];
+  var val = elem.getElementsByTagName("select")[0].value;
+  if (val == "Others") {
+    other.style.display = 'block';
+  } else {
+    other.style.display = 'none';
+  }
 }
 
 function show_tab(n) {
@@ -53,7 +117,7 @@ function show_tab(n) {
   } else {
     document.getElementById("prev_btn").style.display = "inline";
   }
-  if (n == (tabs.length - 1)) {
+  if (n == (tabs.length - 1) || tabs[n] == document.getElementById("return_q")) {
     document.getElementById("sub_btn").style.display = "inline";
     document.getElementById("next_btn").style.display = "none";
   } else {
@@ -80,6 +144,7 @@ function next() {
 }
 
 function validate_form() {
+  return true;
   var tab = document.getElementsByClassName("tab")[cur_tab];
   var inputs = tab.getElementsByTagName("input");
   var valid = true;
@@ -137,7 +202,6 @@ function validate_form() {
     } else {
       inputs[i].className = "form-control";
     }
-
   }
   return valid; // return the valid status
 }

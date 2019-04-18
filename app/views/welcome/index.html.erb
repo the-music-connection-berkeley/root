@@ -1,7 +1,8 @@
 <h1>I'm a:</h1>
-
+<br>
 <div class="container">
     <div class="col btn-group btn-group-justified">
+      <div class="row">
         <div class="col-md-4">
         <%= button_to "Teacher", forms_teacher_url, method: :get, :class => 'btn-space btn btn-xl btn-primary' %>
         </div>
@@ -11,5 +12,6 @@
         <div class="col-md-4">
         <%= button_to "Parent", forms_parent_student_url, method: :get, :class => 'btn-space btn btn-xl btn-info' %>
         </div>
+      </div>
     </div>
 </div>
