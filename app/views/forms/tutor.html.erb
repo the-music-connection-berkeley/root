@@ -57,8 +57,8 @@
   <div class="tab">
     <div class="form-group radio-group" id="jump-group0">
       <label for="question[in_class]">In Class</label> <br>
-      <input type="radio" name="question[in_class]" value="Yes"">      Yes
-      <input type="radio" name="question[in_class]" value="No">      No <br>
+      <input type="radio" name="question[in_class]" value="Yes" id="InClass_Yes">      Yes
+      <input type="radio" name="question[in_class]" value="No" id="InClass_No">      No <br>
       <small class="form-text text-muted">Select yes if you are planning to teach in class.</small>
     </div>
   </div>
@@ -66,23 +66,23 @@
   <div class="tab">
     <div class="form-group">
       <label>Instrument</label><br>
-      <input type="checkbox" name="question[inst0]" value="1">      Cello  <br>
-      <input type="checkbox" name="question[inst1]" value="1">      Tuba <br>
-      <input type="checkbox" name="question[inst2]" value="1">      Drums <br>
+      <input type="checkbox" name="question[inst0]" value="1" id="Cello">      Cello  <br>
+      <input type="checkbox" name="question[inst1]" value="1" id="Tuba">      Tuba <br>
+      <input type="checkbox" name="question[inst2]" value="1" id="Drums">      Drums <br>
       <small class="form-text text-muted">Please enter the instruments you can tutor</small>
     </div>
     <div class="form-group">
       <label>Time Availability</label><br>
-      <input type="checkbox" name="question[time0]" value="1">      Mondays 2PM ~ 3PM   <br>
-      <input type="checkbox" name="question[time1]" value="1">      Tuesday 2PM ~ 3PM  <br>
-      <input type="checkbox" name="question[time2]" value="1">      Mondays 5PM ~ 6PM  <br>
+      <input type="checkbox" name="question[time0]" value="1" id="Mondays 2PM ~ 3PM">      Mondays 2PM ~ 3PM   <br>
+      <input type="checkbox" name="question[time1]" value="1" id="Tuesday 2PM ~ 3PM">      Tuesday 2PM ~ 3PM  <br>
+      <input type="checkbox" name="question[time2]" value="1" id="Mondays 5PM ~ 6PM">      Mondays 5PM ~ 6PM  <br>
       <small class="form-text text-muted">Please enter the time ranges you can tutor</small>
     </div>
     <div class="form-group">
       <label>Preferred Grade Levels</label><br>
-      <input type="checkbox" name="question[grade0]" value="1">      Grade 3~5   <br>
-      <input type="checkbox" name="question[grade1]" value="1">      Grade 6~8  <br>
-      <input type="checkbox" name="question[grade2]" value="1">      Grade 9-11  <br>
+      <input type="checkbox" name="question[grade0]" value="1" id="Grade 3~5">      Grade 3~5   <br>
+      <input type="checkbox" name="question[grade1]" value="1" id="Grade 6~8">      Grade 6~8  <br>
+      <input type="checkbox" name="question[grade2]" value="1" id="Grade 9-11">      Grade 9-11  <br>
       <small class="form-text text-muted">Please enter the time ranges you can tutor</small>
     </div>
   </div>
@@ -90,8 +90,8 @@
   <div class="tab">
     <div class="form-group radio-group" id="jump-group1">
       <label>Private Piano or Vocal?</label> <br>
-      <input type="radio" name="question[private_piano]" value="Yes"">      Yes
-      <input type="radio" name="question[private_piano]" value="No">      No <br>
+      <input type="radio" name="question[private_piano]" value="Yes" id="Private_Yes">      Yes
+      <input type="radio" name="question[private_piano]" value="No" id="Private_No">      No <br>
       <small class="form-text text-muted">Select Yes if you are doing private piano or vocal tutoring.</small>
     </div>
   </div>
@@ -99,15 +99,15 @@
   <div class="tab">
     <div class="form-group">
       <label>Piano or Vocal?</label><br>
-      <input type="checkbox" name="question[pinao]" value="1">      Piano  <br>
-      <input type="checkbox" name="question[pinao]" value="0">      Vocal  <br>
+      <input type="checkbox" name="question[piano]" value="1" id="Piano">      Piano  <br>
+      <input type="checkbox" name="question[piano]" value="0" id="Vocal">      Vocal  <br>
       <small class="form-text text-muted">Select if you are doing private piano or vocal tutoring.</small>
     </div>
     <div class="form-group">
       <label>Time Availability</label><br>
-      <input type="checkbox" name="question[time0]" value="1">      Mondays 2PM ~ 3PM   <br>
-      <input type="checkbox" name="question[time1]" value="1">      Tuesday 2PM ~ 3PM  <br>
-      <input type="checkbox" name="question[time2]" value="1">      Mondays 5PM ~ 6PM  <br>
+      <input type="checkbox" name="question[time0]" value="1" id="Monday">      Mondays 2PM ~ 3PM   <br>
+      <input type="checkbox" name="question[time1]" value="1" id="Tuesday">      Tuesday 2PM ~ 3PM  <br>
+      <input type="checkbox" name="question[time2]" value="1" id="Mondays">      Mondays 5PM ~ 6PM  <br>
       <small class="form-text text-muted">Please enter the time ranges you can tutor</small>
     </div>
     <div class="form-group">
@@ -161,18 +161,9 @@
   <div class="tab">
     <h4>Public Service Center Volunteer Questions</h4>
     <div class="form-group">
-      <label for="question[name]">PSC Q1</label>
-      <input type="text" name="question[name]" class="form-control" placeholder="ex. First Middle Last" required>
+      <label for="question[volunteer]">PSC Q1</label>
+      <input type="text" name="question[volunteer]" class="form-control" placeholder="ex. First Middle Last" required>
       <small class="form-text text-muted">Please enter your full name here!</small>
-    </div>
-    <div class="form-group">
-      <label for="question[email]">PSC Q2</label>
-      <input type="email" name="question[email]" class="form-control" placeholder="ex. TMC@gmail.com" required>
-      <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div><div class="form-group">
-      <label for="question[sid]">PSC Q3</label>
-      <input type="text" name="question[sid]" class="form-control" placeholder="ex. 3032179600">
-      <small class="form-text text-muted">Please enter your SID here!</small>
     </div>
   </div>
 
