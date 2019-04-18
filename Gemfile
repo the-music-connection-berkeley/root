@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'pg', '~> 0.20' # use PostgreSQL in production (Heroku)
 
+gem 'launchy'
+
 # for secure stoage of API keys
 gem 'figaro'
 gem 'pusher'
