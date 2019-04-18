@@ -10,7 +10,7 @@ show_tab(cur_tab);
 
 window.onload = init;
 function init() {
-
+  document.getElementById("rem_instr").style.display = "none";
   var form = document.querySelector('form')
   var prev_btn = document.getElementById("prev_btn");
   var next_btn = document.getElementById("next_btn");
@@ -41,7 +41,6 @@ function init() {
   add_instr.addEventListener('click', function() {
     var original = document.getElementsByClassName("instrument")[0];
     var cln = original.cloneNode(true);
-
     if (cln != null) {
       cln.addEventListener('change', function(){
         display_other(cln);
@@ -55,7 +54,20 @@ function init() {
       other.style.display = 'none';
     }
     document.getElementById("instruments").appendChild(cln);
+    if (document.getElementsByClassName("instrument").length > 1) {
+      document.getElementById("rem_instr").style.display = "inline-block";
+    }
   });
+  var rem_instr = document.getElementById("rem_instr");
+  rem_instr.addEventListener('click', function () {
+    var len = document.getElementsByClassName("instrument").length;
+    var elem = document.getElementsByClassName("instrument")[len - 1];
+    document.getElementById("instruments").removeChild(elem);
+    if (document.getElementsByClassName("instrument").length <= 1) {
+      document.getElementById("rem_instr").style.display = "none";
+    }
+  });
+
 
   var jump_group0 = document.getElementById("jump-group0");
   if (jump_group0 != null) {
@@ -155,65 +167,56 @@ function next() {
 
 function validate_form() {
   var tab = document.getElementsByClassName("tab")[cur_tab];
-  var inputs = tab.getElementsByTagName("input");
-  var valid = true;
+  var form_groups = tab.getElementsByClassName("form-group");
+  for (var i = 0; i < form_groups.length; i++) {
+    var form_group = form_groups[i];
+    if (form_group.classList.contains("radio-group")) {       // Radio Groups Validation
+      var cnt = 0;
+      var radios = form_group.getElementsByTagName("input");
+      for (var j = 0; j < radios.length; j++) {
+        if (radios[j].checked) {
+          cnt = cnt + 1;
+        }
+      }
+      if (cnt == 0) {
+        form_group.className += " invalid";
+        form_group.getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
+        return false;
+      } else {
+        form_group.className += "form-control";
+      }
+    } else if (form_group.classList.contains("checkbox-group")) {
+      var cnt = 0;
+      var checkboxes = form_group.getElementsByTagName("input");
+      for (var j = 0; j < checkboxes.length; j++) {
+        if (checkboxes[j].checked) {
+          cnt = cnt + 1;
+        }
+      }
+      if (cnt == 0) {
+        form_group.className += " invalid";
+        form_group.getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
+        return false;
+      } else {
+        form_group.className += "form-control";
+      }
+    } else if (form_group.classList.contains("dropdown")) {
 
-  // Radio Groups Validation
-  var radio_groups = tab.getElementsByClassName("radio-group");
-  for (var i = 0; i < radio_groups.length; i++) {
-    var cnt = 0;
-    var radios = radio_groups[i].getElementsByTagName("input");
-    for (var j = 0; j < radios.length; j++) {
-      if (radios[j].checked) {
-        cnt = cnt + 1;
+    } else { //regular text input
+      var input = form_group.getElementsByTagName("input")[0];
+      if(!input.classList.contains("required")) {
+        continue;
+      }
+      if (input.value == "") {
+        // add an "invalid" class to the field:
+        input.className += " invalid";
+        input.placeholder = "Please fill out this field.";
+
+        return false;
+      } else {
+        input.className = "form-control";
       }
     }
-    if (cnt == 0) {
-      radio_groups[i].className += " invalid";
-      radio_groups[i].getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
-      return false;
-    } else {
-      radio_groups[i].className += "form-control";
-    }
   }
-
-  // Checkbox Group Validation
-  var checkbox_groups = tab.getElementsByClassName("checkbox-group");
-  for (var i = 0; i < checkbox_groups.length; i++) {
-    var cnt = 0;
-    var checkboxes = checkbox_groups[i].getElementsByTagName("input");
-    for (var j = 0; j < checkboxes.length; j++) {
-      if (checkboxes[j].checked) {
-        cnt = cnt + 1;
-      }
-    }
-    if (cnt == 0) {
-      checkbox_groups[i].className += " invalid";
-      checkbox_groups[i].getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
-      return false;
-    } else {
-      checkbox_groups[i].className += "form-control";
-    }
-  }
-  // A loop that checks every input field in the current tab:
-  for (i = 0; i < inputs.length; i++) {
-    if (!inputs[i].classList.contains("required")) {
-      continue;
-    }
-    // If a field is empty...
-    if (inputs[i].type == "radio" || inputs[i].type == "checkbox") {
-      continue;
-    }
-    if (inputs[i].value == "") {
-      // add an "invalid" class to the field:
-      inputs[i].className += " invalid";
-      inputs[i].placeholder = "Please fill out this field.";
-
-      // and set the current valid status to false:
-      valid = false;
-    } else {
-      inputs[i].className = "form-control";
-    }
-  }
-  return valid; // return the valid status
+  return true;
 }
