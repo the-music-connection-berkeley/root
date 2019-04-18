@@ -173,7 +173,7 @@ function validate_form() {
   for (var i = 0; i < checkbox_groups.length; i++) {
     var cnt = 0;
     var checkboxes = checkbox_groups[i].getElementsByTagName("input");
-    for (var j = 0; j < radios.length; j++) {
+    for (var j = 0; j < checkboxes.length; j++) {
       if (checkboxes[j].checked) {
         cnt = cnt + 1;
       }
