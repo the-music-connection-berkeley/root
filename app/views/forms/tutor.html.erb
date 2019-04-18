@@ -2,16 +2,16 @@
   <p class="h2">Tutor's Form</p>
 </div>
 
-<form method='POST', action='/forms/tutor_next_q'>
+<form method='POST', action='/forms/tutor_submit'>
   <div class="tab">
     <div class="form-group">
       <label for="question[name]">Name</label>
-      <input type="text" name="question[name]" class="form-control" placeholder="ex. First Middle Last" required>
+      <input type="text" name="question[name]" class="form-control" placeholder="ex. First Middle Last">
       <small class="form-text text-muted">Please enter your full name here!</small>
     </div>
     <div class="form-group">
       <label for="question[email]">Email address</label>
-      <input type="email" name="question[email]" class="form-control" placeholder="ex. TMC@gmail.com" required>
+      <input type="email" name="question[email]" class="form-control" placeholder="ex. TMC@gmail.com">
       <small class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div><div class="form-group">
       <label for="question[sid]">SID</label>
@@ -143,27 +143,36 @@
   <div class="tab">
     <div class="form-group" id="jump-group2">
       <label>Returning or New</label><br>
-      <input type="checkbox" name="question[pinao]" value="Returning">      Returning  <br>
-      <input type="checkbox" name="question[pinao]" value="New">      New  <br>
+      <input type="radio" name="question[returning]" value="Returning">      Returning  <br>
+      <input type="radio" name="question[returning]" value="New">      New  <br>
       <small class="form-text text-muted">Select Yes if you are a returning tutor.</small>
     </div>
   </div>
 
-  <div class="tab">
+  <div class="tab" id="return_q">
     <div class="form-group">
-      <label>Work with previous student or class</label><br>
-      <input type="checkbox" name="question[pinao]" value="Returning">      Returning  <br>
-      <input type="checkbox" name="question[pinao]" value="New">      New  <br>
-      <small class="form-text text-muted">Select Yes if you are a returning tutor.</small>
+      <label>Prefer to work with previous student or class?</label><br>
+      <input type="radio" name="question[prev_again]" value="Yes">      Yes  <br>
+      <input type="radio" name="question[prev_again]" value="No">      No  <br>
+      <small class="form-text text-muted">Select Yes if you want to be matched up with previous studnet or class.</small>
     </div>
   </div>
 
   <div class="tab">
     <h4>Public Service Center Volunteer Questions</h4>
     <div class="form-group">
-      <label for="question[volunteer]">PSC Q1</label>
-      <input type="text" name="question[volunteer]" class="form-control" placeholder="ex. First Middle Last" required>
+      <label for="question[name]">PSC Q1</label>
+      <input type="text" name="question[name]" class="form-control" placeholder="ex. First Middle Last">
       <small class="form-text text-muted">Please enter your full name here!</small>
+    </div>
+    <div class="form-group">
+      <label for="question[email]">PSC Q2</label>
+      <input type="email" name="question[email]" class="form-control" placeholder="ex. TMC@gmail.com">
+      <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div><div class="form-group">
+      <label for="question[sid]">PSC Q3</label>
+      <input type="text" name="question[sid]" class="form-control" placeholder="ex. 3032179600">
+      <small class="form-text text-muted">Please enter your SID here!</small>
     </div>
   </div>
 
@@ -190,4 +199,4 @@
   <button type="button" id="prev">prev</button>
   <button type="button" id="next">next</button>
 </div> -->
-<%= javascript_include_tag('forms.js') %>
+<%= javascript_include_tag('forms_tutor.js') %>

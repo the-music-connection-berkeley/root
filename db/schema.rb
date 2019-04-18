@@ -14,16 +14,25 @@
 ActiveRecord::Schema.define(version: 20190410043642) do
 
   create_table "students", force: :cascade do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "teachers", force: :cascade do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "tutors", force: :cascade do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
