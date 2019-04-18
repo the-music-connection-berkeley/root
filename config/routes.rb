@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'admin' => 'admin#home'
+  get 'admin/close_form'
+
+  get 'admin/generate_matches'
+
+  get 'admin/results'
+
+
+  get '/forms' => 'forms#index'
+
   resources :tutors
   resources :teachers
   resources :students
@@ -9,7 +19,9 @@ Rails.application.routes.draw do
 
   post 'forms/tutor' => 'forms#tutor'
 
-  post 'forms/tutor_next_q' => 'forms#tutor_next_q'
+  post 'forms/teacher_submit' => 'forms#teacher_submit'
+  post 'forms/tutor_submit' => 'forms#tutor_submit'
+  post 'forms/student_submit' => 'forms#student_submit'
 
   get 'forms/parent_student'
 
