@@ -198,9 +198,24 @@ function validate_form() {
         form_group.getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
         return false;
       } else {
-        form_group.className += "form-control";
+        form_group.className = form_group.className.substring(0, 11);
       }
     } else if (form_group.classList.contains("dropdown")) {
+      var elems = form_group.getElementsByTagName("select");
+      for (var i = 0; i < elems.length; i++) {
+        var elem = elems[i];
+        if(!elem.classList.contains("required")) {
+          continue;
+        }
+        if (elem.value == "") {
+          elem.className+= " invalid";
+          form_group.getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
+          return false;
+        } else {
+          var len = elem.className.length;
+          elem.className = elem.className.substring(0, len - " invalid".length);
+        }
+      }
 
     } else { //regular text input
       var input = form_group.getElementsByTagName("input")[0];
@@ -211,10 +226,10 @@ function validate_form() {
         // add an "invalid" class to the field:
         input.className += " invalid";
         input.placeholder = "Please fill out this field.";
-
         return false;
       } else {
-        input.className = "form-control";
+        var len = input.className.length;
+        input.className = input.className.substring(0, len - " invalid".length);
       }
     }
   }
