@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'pg', '~> 0.20' # use PostgreSQL in production (Heroku)
+gem 'sqlite3', '~> 1.3.13'
 
 gem 'launchy'
 
@@ -50,7 +51,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'sqlite3', '~> 1.3.13'
+
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -58,7 +59,7 @@ group :development do
 end
 
 group :production do
-  
+
   gem 'rails_12factor'  # Heroku-specific production settings
 end
 
