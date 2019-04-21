@@ -14,9 +14,9 @@
       <input type="tel" name="question[phone]" class="form-control" placeholder="ex. 000-000-0000">
       <small class="form-text text-muted">Please enter your phone number here!</small>
     </div>
-    <div class="form-group">
+    <div class="form-group email-group">
       <label for="email">Email address</label>
-      <input type="text" name="question[email]" class="form-control" placeholder="ex. TMC@gmail.com" >
+      <input type="text" name="question[email]" class="form-control email" placeholder="ex. TMC@gmail.com" >
       <small class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
   </div>
@@ -55,11 +55,11 @@
       <input type="datetime-local" name="question[end_date]">
       <small class="form-text text-muted">Please enter your end date!</small>
     </div>
-    <div class="form-group dropdown">
+    <div class="form-group dropdown-group required">
       <div id="instruments">
         <label>Instrument</label>
         <div class="instrument">
-          <select class="form-control required" name="question[instrument]">
+          <select class="form-control" name="question[instrument]">
             <option disabled selected value> -- select an option -- </option>
             <option value="Violin">Violin</option>
             <option value="Cello">Cello</option>
