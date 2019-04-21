@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'pg', '~> 0.20' # use PostgreSQL in production (Heroku)
+# gem 'pg', '~> 0.20' # use PostgreSQL in production (Heroku)
 gem 'sqlite3', '~> 1.3.13'
 
 gem 'launchy'

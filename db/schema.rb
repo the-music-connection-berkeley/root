@@ -17,24 +17,53 @@ ActiveRecord::Schema.define(version: 20190410043642) do
     t.string   "name"
     t.string   "phone"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "address"
+    t.string   "piano"
+    t.string   "grade"
+    t.string   "instruments"
+    t.string   "experiences"
+    t.string   "pastapp"
+    t.string   "lunch"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "teachers", force: :cascade do |t|
     t.string   "name"
     t.string   "phone"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "class_name"
+    t.string   "school_name"
+    t.string   "grade"
+    t.string   "time_availavility"
+    t.string   "start_date"
+    t.string   "end_date"
+    t.string   "instruments"
+    t.string   "comment"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "tutors", force: :cascade do |t|
     t.string   "name"
     t.string   "phone"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "sid"
+    t.string   "year"
+    t.string   "major"
+    t.string   "minor"
+    t.string   "experiences"
+    t.string   "in_class"
+    t.string   "instruments"
+    t.string   "time_availavility"
+    t.string   "preferred_grade"
+    t.string   "private"
+    t.string   "piano"
+    t.string   "returning"
+    t.string   "prev_again"
+    t.string   "interview_time"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
 end
