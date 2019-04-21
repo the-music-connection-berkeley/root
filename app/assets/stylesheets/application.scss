@@ -23,3 +23,12 @@ input.invalid {
 .logo {
     padding-bottom: 30px;
 }
+
+.bg {
+    background: url(background.png) no-repeat center center fixed;
+    position: relative;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+     background-size: 100% auto;
+}
