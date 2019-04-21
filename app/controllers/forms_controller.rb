@@ -16,24 +16,24 @@ class FormsController < ApplicationController
   end
 
   def teacher_submit
-      name = params[:question][:teacher_name]
-      phone = params[:question][:phone]
-      email = params[:question][:email]
-      class_name = params[:question][:class_name]
-      school_name = params[:question][:school_name]
-      grade = params[:question][:grade]
-      time_availavility = params[:question][:time_availavility]
-      start_date = params[:question][:start_date]
-      end_date = params[:question][:end_date]
-      instruments = params[:question][:instruments]
-      comment = params[:question][:comment]
-      teacher = Teacher.new
-      teacher.attributes = {name: name, phone: phone,
-        email: email, class_name: class_name, school_name: school_name,
-        grade: grade, time_availavility: time_availavility, start_date: start_date,
-      end_date: end_date, instruments: instruments, comment: comment}
-      teacher.save!
-      render 'thank_you'
+    name = params[:question][:teacher_name]
+    phone = params[:question][:phone]
+    email = params[:question][:email]
+    class_name = params[:question][:class_name]
+    school_name = params[:question][:school_name]
+    grade = params[:question][:grade]
+    time_availavility = params[:question][:time_availavility]
+    start_date = params[:question][:start_date]
+    end_date = params[:question][:end_date]
+    instruments = params[:question][:instruments]
+    comment = params[:question][:comment]
+    teacher = Teacher.new
+    teacher.attributes = {name: name, phone: phone,
+      email: email, class_name: class_name, school_name: school_name,
+      grade: grade, time_availavility: time_availavility, start_date: start_date,
+    end_date: end_date, instruments: instruments, comment: comment}
+    teacher.save!
+    render 'thank_you'
   end
 
   def student_submit
@@ -48,12 +48,12 @@ class FormsController < ApplicationController
     pastapp = params[:question][:pastapp]
     lunch = params[:question][:lunch]
     student = Student.new
-  student.attributes = {name: name, phone: phone,
+    student.attributes = {name: name, phone: phone,
       email: email, address: address, piano: piano,
       grade: grade, instruments: instruments, experiences: experiences,
     pastapp: pastapp, lunch: lunch}
     student.save!
-      render 'thank_you'
+    render 'thank_you'
   end
 
   def tutor_submit
