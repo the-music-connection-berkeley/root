@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # gem 'pg', '~> 0.20' # use PostgreSQL in production (Heroku)
-gem 'sqlite3', '~> 1.3.13'
+
 
 gem 'launchy'
 
@@ -47,6 +47,7 @@ gem 'attr_encrypted'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'sqlite3', '~> 1.3.13'
 end
 
 group :development do
@@ -59,8 +60,8 @@ group :development do
 end
 
 group :production do
-
   gem 'rails_12factor'  # Heroku-specific production settings
+  # gem 'pg', '~> 0.20' # use PostgreSQL in production (Heroku)
 end
 
 # setup Cucumber, RSpec, Guard support
