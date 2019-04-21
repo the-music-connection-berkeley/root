@@ -14,9 +14,9 @@
       <input type="tel" name="question[phone]" class="form-control" placeholder="ex. 000-000-0000">
       <small class="form-text text-muted">Please enter your phone number here!</small>
     </div>
-    <div class="form-group">
+    <div class="form-group email-group">
       <label for="email">Email address</label>
-      <input type="text" name="question[email]" class="form-control" placeholder="ex. TMC@gmail.com" >
+      <input type="text" name="question[email]" class="form-control email" placeholder="ex. TMC@gmail.com" >
       <small class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
   </div>
@@ -55,11 +55,12 @@
       <input type="datetime-local" name="question[end_date]">
       <small class="form-text text-muted">Please enter your end date!</small>
     </div>
-    <div class="form-group">
+    <div class="form-group dropdown-group required">
       <div id="instruments">
         <label>Instrument</label>
         <div class="instrument">
           <select class="form-control" name="question[instrument]">
+            <option disabled selected value> -- select an option -- </option>
             <option value="Violin">Violin</option>
             <option value="Cello">Cello</option>
             <option value="Guitar">Guitar</option>
@@ -68,12 +69,14 @@
           </select>
           <input class="form-control instr_other" type="text" style="display:none;" name="question[instrument]" placeholder="Specify instrument">
         </div>
-
       </div>
       <small class="form-text text-muted">Select the instruments you are requesting.</small>
     </div>
-    <button type="button" class="btn btn-default btn-sm" id="add_instr">
-          <span class="glyphicon glyphicon-plus"></span> Plus
+    <button type="button" class="btn btn-primary btn-sm" id="add_instr">
+      Add Instrument
+    </button>
+    <button type="button" class="btn btn-primary btn-sm" id="rem_instr">
+      Remove Instrument
     </button>
     <div class="form-group">
       <label for="comment">Comment</label>
@@ -86,4 +89,4 @@
   <button type="submit" id="sub_btn" class="btn btn-primary">Submit</button>
 </form>
 
-<%= javascript_include_tag('forms.js') %>
+<%= javascript_include_tag('forms_teacher.js') %>

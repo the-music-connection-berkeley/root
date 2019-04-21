@@ -71,7 +71,7 @@
       <input type="checkbox" name="question[inst2]" value="1" id="Drums">      Drums <br>
       <small class="form-text text-muted">Please enter the instruments you can tutor</small>
     </div>
-    <div class="form-group">
+    <div class="form-group checkbox-group">
       <label>Time Availability</label><br>
       <input type="checkbox" name="question[time0]" value="1" id="Mondays 2PM ~ 3PM">      Mondays 2PM ~ 3PM   <br>
       <input type="checkbox" name="question[time1]" value="1" id="Tuesday 2PM ~ 3PM">      Tuesday 2PM ~ 3PM  <br>
@@ -161,8 +161,8 @@
   <div class="tab">
     <h4>Public Service Center Volunteer Questions</h4>
     <div class="form-group">
-    <label for="question[volunteer]">PSC Q1</label>
-    <input type="text" name="question[volunteer]" class="form-control" placeholder="ex. First Middle Last" required>
+      <label for="question[name]">PSC Q1</label>
+      <input type="text" name="question[name]" class="form-control" placeholder="ex. First Middle Last">
       <small class="form-text text-muted">Please enter your full name here!</small>
     </div>
     <div class="form-group">
@@ -200,4 +200,4 @@
   <button type="button" id="prev">prev</button>
   <button type="button" id="next">next</button>
 </div> -->
-<%= javascript_include_tag('forms.js') %>
+<%= javascript_include_tag('forms_tutor.js') %>
