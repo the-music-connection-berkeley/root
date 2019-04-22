@@ -4,12 +4,12 @@
 
 <form method='POST', action='/forms/tutor_submit'>
   <div class="tab">
-    <div class="form-group required">
+    <div class="form-group">
       <label for="question[name]">Name</label>
       <input type="text" name="question[name]" class="form-control" placeholder="ex. First Middle Last">
       <small class="form-text text-muted">Please enter your full name here!</small>
     </div>
-    <div class="form-group required">
+    <div class="form-group">
       <label for="question[phone]">Phone Number</label>
       <input type="tel" name="question[phone]" class="form-control" placeholder="ex. 000-000-0000">
       <small class="form-text text-muted">Please enter your phone number here!</small>
@@ -63,7 +63,7 @@
   </div>
 
   <div class="tab">
-    <div class="form-group dropdown-group required">
+    <div class="form-group dropdown-group">
       <div id="instruments">
         <label>Instrument</label>
         <div class="instrument">
@@ -135,15 +135,15 @@
   </div>
 
   <div class="tab">
-    <div class="">
+    <div>
       <h4>Member Commitment Policy</h4>
       <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
     </div>
-    <div class="">
+    <div>
       <h4>Attendance Policy</h4>
       <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
     </div>
-    <div class="form-group">
+    <div class="form-group checkbox-group required">
       <label>Member Commitment Policy</label><br>
       <input type="checkbox" name="question[policy]" value="1">      I have read and agree to the policy.  <br>
       <small class="form-text text-muted">This is mandatory.</small>
