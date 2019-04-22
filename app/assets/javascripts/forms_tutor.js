@@ -1,8 +1,8 @@
+//global variables
 var cur_tab = 0;
 var jump = 1;
 var array = new Array(); //history of the page traversal
-document.getElementById("sub_btn").style.display = "none";
-var tabs = document.getElementsByClassName("tab");
+var tabs = document.getElementsByClassName("tab");  //unit of display
 for (i = 0; i < tabs.length; i++) {
   tabs[i].style.display = "none";
 }
@@ -10,7 +10,6 @@ show_tab(cur_tab);
 
 window.onload = init;
 function init() {
-  document.querySelector('form').onkeypress = checkEnter;
   var prev_btn = document.getElementById("prev_btn");
   var next_btn = document.getElementById("next_btn");
   prev_btn.addEventListener('click', function(){
@@ -19,19 +18,28 @@ function init() {
   next_btn.addEventListener('click', function(){
     next();
   });
+  var form = document.querySelector('form')
+  form.onkeypress = checkEnter;
+  form.addEventListener('submit', function(event) {
+    if (!validate_form()) {
+      event.preventDefault();
+      return false;
+    } else {
+      return true;
+    }
+  }, true);
 
+  document.getElementById("rem_instr").style.display = "none";
   var instrument = document.getElementsByClassName("instrument")[0];
   if (instrument != null) {
     instrument.addEventListener('change', function(){
       display_other(instrument);
     });
   }
-
   var add_instr = document.getElementById("add_instr");
   add_instr.addEventListener('click', function() {
     var original = document.getElementsByClassName("instrument")[0];
     var cln = original.cloneNode(true);
-
     if (cln != null) {
       cln.addEventListener('change', function(){
         display_other(cln);
@@ -45,8 +53,21 @@ function init() {
       other.style.display = 'none';
     }
     document.getElementById("instruments").appendChild(cln);
+    if (document.getElementsByClassName("instrument").length > 1) {
+      document.getElementById("rem_instr").style.display = "inline-block";
+    }
+  });
+  var rem_instr = document.getElementById("rem_instr");
+  rem_instr.addEventListener('click', function () {
+    var len = document.getElementsByClassName("instrument").length;
+    var elem = document.getElementsByClassName("instrument")[len - 1];
+    document.getElementById("instruments").removeChild(elem);
+    if (document.getElementsByClassName("instrument").length <= 1) {
+      document.getElementById("rem_instr").style.display = "none";
+    }
   });
 
+  //tab navigation listener
   var jump_group0 = document.getElementById("jump-group0");
   if (jump_group0 != null) {
     var radios = jump_group0.getElementsByTagName('input');
@@ -60,7 +81,6 @@ function init() {
       }
     }
   }
-
   var jump_group1 = document.getElementById("jump-group1");
   if (jump_group1 != null) {
     var radios = jump_group1.getElementsByTagName('input');
@@ -74,7 +94,6 @@ function init() {
       }
     }
   }
-
   var jump_group2 = document.getElementById("jump-group2");
   if (jump_group2 != null) {
     var radios = jump_group2.getElementsByTagName('input');
@@ -88,8 +107,6 @@ function init() {
       }
     }
   }
-
-
 }
 
 function checkEnter(e){
@@ -144,64 +161,87 @@ function next() {
 }
 
 function validate_form() {
-  return true;
   var tab = document.getElementsByClassName("tab")[cur_tab];
-  var inputs = tab.getElementsByTagName("input");
+  var form_groups = tab.getElementsByClassName("form-group");
   var valid = true;
-
-  // Radio Groups Validation
-  var radio_groups = tab.getElementsByClassName("radio-group");
-  for (var i = 0; i < radio_groups.length; i++) {
-    var cnt = 0;
-    var radios = radio_groups[i].getElementsByTagName("input");
-    for (var j = 0; j < radios.length; j++) {
-      if (radios[j].checked) {
-        cnt = cnt + 1;
-      }
-    }
-    if (cnt == 0) {
-      radio_groups[i].className += " invalid";
-      radio_groups[i].getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
-      return false;
-    } else {
-      radio_groups[i].className += "form-control";
-    }
-  }
-
-  // Checkbox Group Validation
-  var checkbox_groups = tab.getElementsByClassName("checkbox-group");
-  for (var i = 0; i < checkbox_groups.length; i++) {
-    var cnt = 0;
-    var checkboxes = checkbox_groups[i].getElementsByTagName("input");
-    for (var j = 0; j < checkboxes.length; j++) {
-      if (checkboxes[j].checked) {
-        cnt = cnt + 1;
-      }
-    }
-    if (cnt == 0) {
-      checkbox_groups[i].className += " invalid";
-      checkbox_groups[i].getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
-      return false;
-    } else {
-      checkbox_groups[i].className += "form-control";
-    }
-  }
-  // A loop that checks every input field in the current tab:
-  for (i = 0; i < inputs.length; i++) {
-    // If a field is empty...
-    if (inputs[i].type == "radio" || inputs[i].type == "checkbox") {
+  for (var i = 0; i < form_groups.length; i++) {
+    var form_group = form_groups[i];
+    if (!form_group.classList.contains("required")) {
       continue;
     }
-    if (inputs[i].value == "") {
-      // add an "invalid" class to the field:
-      inputs[i].className += " invalid";
-      inputs[i].placeholder = "Please fill out this field.";
-
-      // and set the current valid status to false:
-      valid = false;
-    } else {
-      inputs[i].className = "form-control";
+    if (form_group.classList.contains("email-group")) {     //  Email validation
+      var email = form_group.getElementsByTagName("input")[0].value;
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (!email) {
+        form_group.getElementsByTagName("input")[0].className += " invalid";
+        form_group.getElementsByTagName("input")[0].placeholder = "Please fill out this field.";
+        valid = false;
+      } else if (!re.test(String(email).toLowerCase())) {
+        form_group.getElementsByTagName("input")[0].className += " invalid";
+        form_group.getElementsByTagName("small")[0].innerHTML = "Please enter in a valid email."
+        valid = false;
+      } else {
+        var len = form_group.getElementsByTagName("input")[0].className.length;
+        form_group.getElementsByTagName("input")[0].className = form_group.getElementsByTagName("input")[0].className.substring(0, len - " invalid".length);
+        form_group.getElementsByTagName("small")[0].innerHTML = "Please enter in your email here."
+      }
+    } else if (form_group.classList.contains("radio-group")) {       // Radio Groups Validation
+      var cnt = 0;
+      var radios = form_group.getElementsByTagName("input");
+      for (var j = 0; j < radios.length; j++) {
+        if (radios[j].checked) {
+          cnt = cnt + 1;
+        }
+      }
+      if (cnt == 0) {
+        form_group.className += " invalid";
+        form_group.getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
+        valid = false;
+      } else {
+        form_group.className += "form-control";
+      }
+    } else if (form_group.classList.contains("checkbox-group")) {   // Checkbox validation
+      var cnt = 0;
+      var checkboxes = form_group.getElementsByTagName("input");
+      for (var j = 0; j < checkboxes.length; j++) {
+        if (checkboxes[j].checked) {
+          cnt = cnt + 1;
+        }
+      }
+      if (cnt == 0) {
+        form_group.className += " invalid";
+        form_group.getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
+        valid = false;
+      } else {
+        form_group.className = form_group.className.substring(0, 11);
+      }
+    } else if (form_group.classList.contains("dropdown-group")) {   // Dropdown validation
+      var elems = form_group.getElementsByTagName("select");
+      for (var j = 0; j < elems.length; j++) {
+        var elem = elems[j];
+        if (elem.value == "") {
+          elem.className+= " invalid";
+          form_group.getElementsByClassName("form-text")[0].innerHTML = "Please fill out this field.";
+          valid = false;
+        } else {
+          var len = elem.className.length;
+          elem.className = elem.className.substring(0, len - " invalid".length);
+        }
+      }
+    } else { //regular text input
+      var input = form_group.getElementsByTagName("input")[0];
+      if (input.value == "") {
+        // add an "invalid" class to the field:
+        if (!input.classList.contains("invalid")) {
+          input.className += " invalid";
+        }
+        input.placeholder = "Please fill out this field.";
+        valid = false;
+      } else {
+        var len = input.className.length;
+        input.className = input.className.substring(0, len - " invalid".length);
+      }
     }
   }
-  return valid; // return the valid status
+  return valid;
 }
