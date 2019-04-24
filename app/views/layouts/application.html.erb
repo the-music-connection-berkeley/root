@@ -7,15 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body class='bg'>
-<a href='/'>
-  <div class="container logo">
-      <%= image_tag "logo.svg", :class => 'logo', :width=> "10%", :height => "5%" %>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href='/'>
+      <div class="container">
+          <%= image_tag "logo2.svg", :class => 'logo', :width=> "10%", :height => "5%" %>
+          The Music Connection
+      </div>
+    </a>
+  </nav>
+  <div class="container">
+      <%= yield %>
   </div>
-</a>
-<div class="container">
-    <%= yield %>
-</div>
-<br>
-<br>
+  <br>
+  <br>
 </body>
 </html>

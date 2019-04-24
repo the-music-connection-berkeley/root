@@ -4,7 +4,7 @@
   <title>Admin Page</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'admin', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -21,5 +21,7 @@
 <div class="container">
     <%= yield %>
 </div>
+<br>
+<br>
 </body>
 </html>
