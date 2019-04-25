@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # for secure stoage of API keys
 gem 'figaro'
 gem 'pusher'
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
