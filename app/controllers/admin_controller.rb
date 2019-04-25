@@ -11,7 +11,7 @@ class AdminController < ApplicationController
   def results
   end
   def match_pair
-    puts request.body.read
+    puts JSON.parse(request.body.read)
     render text: ""
   end
 end
