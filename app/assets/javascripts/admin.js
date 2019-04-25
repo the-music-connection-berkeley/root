@@ -13,9 +13,17 @@ function init() {
 function match_pair() {
   var row1 = Array.from(rows1).filter(is_checked)[0];
   var row2 = Array.from(rows2).filter(is_checked)[0];
+  var tutor_id = row1.getElementsByTagName('td')[5].innerText;
+  var client_id = row2.getElementsByTagName('td')[5].innerText;
   var color = getRandomColor();
   row1.style.backgroundColor = color;
   row2.style.backgroundColor = color;
+  fetch ('match_pair', {
+    method: "post",
+    body: JSON.stringify({"tutor_id":tutor_id, "client_id":client_id})
+  }).then(function(response) {
+    return response.text();
+  });
 }
 
 function is_checked(row) {
