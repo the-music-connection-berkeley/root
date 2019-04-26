@@ -6,18 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class='bg'>
-  <nav class="navbar navbar-light bg-light">
+<body>
+  <nav class="navbar navbar-light fixed-top bg-light">
     <a class="navbar-brand" href='/'>
       <div class="container">
-          <%= image_tag "logo2.svg", :class => 'logo', :width=> "10%", :height => "5%" %>
-          The Music Connection
+          <%= image_tag "logo2.svg", :class => 'logo', :size => "85x85" %>
+          <b>The Music Connection</b>
       </div>
     </a>
   </nav>
-  <div class="container">
-    <%= yield %>
-  </div>
+  <%= yield %>
   <br>
   <br>
 </body>
