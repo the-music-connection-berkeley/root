@@ -2,13 +2,9 @@ var cur_tab = 0;
 var jump = 1;
 var array = new Array(); //history of the page traversal
 document.getElementById("sub_btn").style.display = "none";
-var tabs = document.getElementsByClassName("tab");
-for (i = 0; i < tabs.length; i++) {
-  tabs[i].style.display = "none";
-}
 show_tab(cur_tab);
 
-window.onload = init;
+init();
 function init() {
   document.querySelector('form').onkeypress = checkEnter;
   var prev_btn = document.getElementById("prev_btn");

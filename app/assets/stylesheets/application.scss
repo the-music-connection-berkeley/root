@@ -1,5 +1,10 @@
 @import "bootstrap";
 
+.tab:not(:first-child) {
+  display: none;
+}
+
+
 .hero-img {
   background: url(background-original.jpg);
   height: 40vw;

@@ -2,13 +2,9 @@
 var cur_tab = 0;
 var jump = 1;
 var array = new Array(); //history of the page traversal
-var tabs = document.getElementsByClassName("tab");  //unit of display
-for (i = 0; i < tabs.length; i++) {
-  tabs[i].style.display = "none";
-}
 show_tab(cur_tab);
 
-window.onload = init;
+init();
 function init() {
   var prev_btn = document.getElementById("prev_btn");
   var next_btn = document.getElementById("next_btn");
