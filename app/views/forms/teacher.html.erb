@@ -32,30 +32,51 @@
       <small class="form-text text-muted">Please enter your school here!</small>
     </div>
     <div class="form-group">
-      <label for="grade">Grades Level(s)</label>
-      <input type="text" name="question[grade]" class="form-control" placeholder="ex. 6th grades">
+      <label for="grade">Grades Level(s)</label><br>
+      <input type="checkbox" name="question[grade]" value="6">      6th Grade  <br>
+      <input type="checkbox" name="question[grade]" value="7">      7th Grade <br>
+      <input type="checkbox" name="question[grade]" value="8">      8th Grade <br>
+      <input type="checkbox" name="question[grade]" value="9">      9th Grade  <br>
+      <input type="checkbox" name="question[grade]" value="10">      10th Grade <br>
+      <input type="checkbox" name="question[grade]" value="11">      11th Grade <br>
+      <input type="checkbox" name="question[grade]" value="12">      12th Grade <br>
       <small class="form-text text-muted">Please enter your grade level(s) here!</small>
     </div>
 
-    <div class="form-group">
-      <label>Time Availabilities</label><br>
-      <input type="checkbox" name="question[time0]" value="1">      Mondays 3PM ~ 4PM  <br>
-      <input type="checkbox" name="question[time1]" value="1">      Tuesdays 5PM ~ 6PM <br>
-      <input type="checkbox" name="question[time2]" value="1">      Fridays 4PM ~ 5PM <br>
-      <small class="form-text text-muted">Please enter your time availability!</small>
+    <div class="form-group dropdown-group">
+      <div id="time-groups">
+        <label>Class Time</label>
+        <div class="time-group row">
+          <div class="col-md-4" id="day_of_week">
+            <select class="form-control" name="question[time]">
+              <option disabled selected value> -- Day of the Week -- </option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday" >Friday</option>
+            </select>
+          </div>
+          <div class="col-md-4" id="start_time">
+            <input class="form-control" name="question[start_time]" type="time" value="13:45:00" id="example-time-input">
+          </div>
+          <div class="col-md-4" id="end_time">
+            <input class="form-control" name="question[end_time]" type="time" value="15:45:00" id="example-time-input">
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary btn-sm" id="add_time">
+        Add More Class Time
+      </button>
+      <button type="button" class="btn btn-primary btn-sm" id="rem_time">
+        Remove Class Time
+      </button>
+      <small class="form-text text-muted">Select the instruments you are requesting.</small>
     </div>
 
-    <div class="form-group">
-      <label for="start_date">Start Date</label><br>
-      <input type="date" name="question[start_date]">
-      <small class="form-text text-muted">Please enter your start date!</small>
-    </div>
-    <div class="form-group">
-      <label for="end_date">End Date</label><br>
-      <input type="date" name="question[end_date]">
-      <small class="form-text text-muted">Please enter your end date!</small>
-    </div>
-    <div class="form-group dropdown-group required">
+
+
+    <div class="form-group dropdown-group">
       <div id="instruments">
         <label>Instrument</label>
         <div class="instrument">
@@ -70,14 +91,15 @@
           <input class="form-control instr_other" type="text" style="display:none;" name="question[instrument]" placeholder="Specify instrument">
         </div>
       </div>
+      <button type="button" class="btn btn-primary btn-sm" id="add_instr">
+        Add More Instrument
+      </button>
+      <button type="button" class="btn btn-primary btn-sm" id="rem_instr">
+        Remove Instrument
+      </button>
       <small class="form-text text-muted">Select the instruments you are requesting.</small>
     </div>
-    <button type="button" class="btn btn-primary btn-sm" id="add_instr">
-      Add Instrument
-    </button>
-    <button type="button" class="btn btn-primary btn-sm" id="rem_instr">
-      Remove Instrument
-    </button>
+
     <div class="form-group">
       <label for="comment">Comment</label>
       <input type="text" name="question[comment]" class="form-control">
