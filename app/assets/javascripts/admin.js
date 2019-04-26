@@ -34,6 +34,15 @@ function undo_pair() {
   var row2 = Array.from(rows2).filter(is_checked)[0];
   var tutor_id = row1.getElementsByTagName('td')[5].innerText;
   var client_id = row2.getElementsByTagName('td')[5].innerText;
+  row1.style.backgroundColor = "";
+  row2.style.backgroundColor = "";
+  fetch ('undo_pair', {
+    method: "put",
+    body: JSON.stringify({"tutor_id":tutor_id, "client_id":client_id})
+  }).then(function(response) {
+    return response.text();
+  });
+
 }
 
 function is_checked(row) {

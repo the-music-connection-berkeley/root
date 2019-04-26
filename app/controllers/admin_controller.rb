@@ -14,4 +14,9 @@ class AdminController < ApplicationController
     puts JSON.parse(request.body.read)
     render text: ""
   end
+
+  def undo_pair
+    puts JSON.parse(request.body.read)
+    render text: ""
+  end
 end
