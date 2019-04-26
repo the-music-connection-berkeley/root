@@ -1,16 +1,9 @@
 class FormsController < ApplicationController
+  def index
+    redirect_to '/'
+  end
 
   def teacher
-      session[:question_number] = params[:inputs]
-      puts(params)
-      if (question_number == 1)
-          if params[:answers][question_numbewr] == "In-class"
-            cur_question_number = 3
-            redirect_to forms/teachers
-          else
-
-          end
-      end
   end
 
   def parent_student
@@ -22,8 +15,75 @@ class FormsController < ApplicationController
       render 'tutor'
   end
 
-  def tutor_next_q
-      @q_page = session[:q_page] + 1
-      render 'tutor'
+  def teacher_submit
+    name = params[:question][:teacher_name]
+    phone = params[:question][:phone]
+    email = params[:question][:email]
+    class_name = params[:question][:class_name]
+    school_name = params[:question][:school_name]
+    grade = params[:question][:grade]
+    time_availavility = params[:question][:time_availavility]
+    start_date = params[:question][:start_date]
+    end_date = params[:question][:end_date]
+    instruments = params[:question][:instruments]
+    comment = params[:question][:comment]
+    teacher = Teacher.new
+    teacher.attributes = {name: name, phone: phone,
+      email: email, class_name: class_name, school_name: school_name,
+      grade: grade, time_availavility: time_availavility, start_date: start_date,
+    end_date: end_date, instruments: instruments, comment: comment}
+    teacher.save!
+    render 'thank_you'
   end
+
+  def student_submit
+    name = params[:question][:name]
+    phone = params[:question][:phone]
+    email = params[:question][:email]
+    address = params[:question][:address]
+    piano = params[:question][:piano]
+    grade = params[:question][:grade]
+    instruments = params[:question][:instruments]
+    experiences = params[:question][:experiences]
+    pastapp = params[:question][:pastapp]
+    lunch = params[:question][:lunch]
+    student = Student.new
+    student.attributes = {name: name, phone: phone,
+      email: email, address: address, piano: piano,
+      grade: grade, instruments: instruments, experiences: experiences,
+    pastapp: pastapp, lunch: lunch}
+    student.save!
+    render 'thank_you'
+  end
+
+  def tutor_submit
+    name = params[:question][:name]
+    phone = params[:question][:phone]
+    email = params[:question][:email]
+    sid = params[:question][:sid]
+    year = params[:question][:year]
+    major = params[:question][:major]
+    minor = params[:question][:minor]
+    experiences = params[:question][:experiences]
+    in_class = params[:question][:in_class]
+    instruments = params[:question][:instruments]
+    time_availavility = params[:question][:time_availavility]
+    preferred_grade = params[:question][:preferred_grade]
+    private = params[:question][:private]
+    piano = params[:question][:piano]
+    returning = params[:question][:returning]
+    prev_again = params[:question][:prev_again]
+    interview_time = params[:question][:interview_time]
+
+    tutor = Tutor.new
+    tutor.attributes = {name: name, phone: phone,
+      email: email, sid: sid, year: year,
+      major: major, minor: minor, experiences: experiences,
+    in_class: in_class, instruments: instruments, time_availavility: time_availavility,
+   preferred_grade: preferred_grade, private: private, piano: piano, returning: returning,
+   prev_again: prev_again, interview_time: interview_time}
+    tutor.save!
+    render 'thank_you'
+  end
+
 end

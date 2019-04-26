@@ -2,17 +2,91 @@
   <h1>Teacher's Form</h1>
 </div>
 
-<div class="row">
-  <div class="question">
-    <!-- <h2>Question 1: What is your name?</h2> -->
-    <input type="text" name="" value="" placeholder="name">
-    <input type="text" name="" value="" placeholder="Email">
-    <input type="text" name="" value="" placeholder="SID">
+<form method='POST', action='/forms/teacher_submit'>
+  <div class="tab">
+    <div class="form-group">
+      <label for="name">Teacher Name</label>
+      <input type="text" name="question[teacher_name]" class="form-control" placeholder="ex. First Middle Last">
+      <small class="form-text text-muted">Please enter your full name here!</small>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="question[phone]" class="form-control" placeholder="ex. 000-000-0000">
+      <small class="form-text text-muted">Please enter your phone number here!</small>
+    </div>
+    <div class="form-group email-group">
+      <label for="email">Email address</label>
+      <input type="text" name="question[email]" class="form-control email" placeholder="ex. TMC@gmail.com" >
+      <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
   </div>
-</div>
+  <div class="tab">
+    <div class="form-group">
+      <label for="class_name">Class Name</label>
+      <input type="text" name="question[class_name]" class="form-control" placeholder="ex. Piano Beginner">
+      <small class="form-text text-muted">Please enter your class name here!</small>
+    </div>
+    <div class="form-group">
+      <label for="school_name">School</label>
+      <input type="text" name="question[school_name]" class="form-control" placeholder="ex. Berkeley elementary school">
+      <small class="form-text text-muted">Please enter your school here!</small>
+    </div>
+    <div class="form-group">
+      <label for="grade">Grades Level(s)</label>
+      <input type="text" name="question[grade]" class="form-control" placeholder="ex. 6th grades">
+      <small class="form-text text-muted">Please enter your grade level(s) here!</small>
+    </div>
 
-<div class="row">
-  <button type="button" id="prev">prev</button>
-  <button type="button" id="next">next</button>
-</div>
-<%= javascript_include_tag('forms.js') %>
+    <div class="form-group">
+      <label>Time Availabilities</label><br>
+      <input type="checkbox" name="question[time0]" value="1">      Mondays 3PM ~ 4PM  <br>
+      <input type="checkbox" name="question[time1]" value="1">      Tuesdays 5PM ~ 6PM <br>
+      <input type="checkbox" name="question[time2]" value="1">      Fridays 4PM ~ 5PM <br>
+      <small class="form-text text-muted">Please enter your time availability!</small>
+    </div>
+
+    <div class="form-group">
+      <label for="start_date">Start Date</label><br>
+      <input type="date" name="question[start_date]">
+      <small class="form-text text-muted">Please enter your start date!</small>
+    </div>
+    <div class="form-group">
+      <label for="end_date">End Date</label><br>
+      <input type="date" name="question[end_date]">
+      <small class="form-text text-muted">Please enter your end date!</small>
+    </div>
+    <div class="form-group dropdown-group required">
+      <div id="instruments">
+        <label>Instrument</label>
+        <div class="instrument">
+          <select class="form-control" name="question[instrument]">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Violin">Violin</option>
+            <option value="Cello">Cello</option>
+            <option value="Guitar">Guitar</option>
+            <option value="Piano">Piano</option>
+            <option value="Others" >Others</option>
+          </select>
+          <input class="form-control instr_other" type="text" style="display:none;" name="question[instrument]" placeholder="Specify instrument">
+        </div>
+      </div>
+      <small class="form-text text-muted">Select the instruments you are requesting.</small>
+    </div>
+    <button type="button" class="btn btn-primary btn-sm" id="add_instr">
+      Add Instrument
+    </button>
+    <button type="button" class="btn btn-primary btn-sm" id="rem_instr">
+      Remove Instrument
+    </button>
+    <div class="form-group">
+      <label for="comment">Comment</label>
+      <input type="text" name="question[comment]" class="form-control">
+      <small class="form-text text-muted">Special instructions / Preference</small>
+    </div>
+  </div>
+  <button type="button" id="prev_btn" class="btn btn-primary">Prev</button>
+  <button type="button" id="next_btn" class="btn btn-primary">Next</button>
+  <button type="submit" id="sub_btn" class="btn btn-primary">Submit</button>
+</form>
+
+<%= javascript_include_tag('forms_teacher.js') %>
