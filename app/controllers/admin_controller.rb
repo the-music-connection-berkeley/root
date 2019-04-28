@@ -10,7 +10,6 @@ class AdminController < ApplicationController
 
   def results
   end
-<<<<<<< HEAD
   def match_pair
     puts JSON.parse(request.body.read)
     render text: ""
@@ -20,6 +19,4 @@ class AdminController < ApplicationController
     puts JSON.parse(request.body.read)
     render text: ""
   end
-=======
->>>>>>> 08f19b11807f5ef685ef031a745600479e0f2556
 end
