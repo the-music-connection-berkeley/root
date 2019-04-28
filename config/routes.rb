@@ -7,8 +7,12 @@ Rails.application.routes.draw do
 
   get 'admin/results'
 
+<<<<<<< HEAD
   post 'admin/match_pair' => 'admin#match_pair'
   put 'admin/undo_pair' => 'admin#undo_pair'
+=======
+
+>>>>>>> 08f19b11807f5ef685ef031a745600479e0f2556
   get '/forms' => 'forms#index'
 
   resources :tutors

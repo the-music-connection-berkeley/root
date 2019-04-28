@@ -35,11 +35,14 @@
 }
 
 .btn-group {
-  // padding: 10px 24px; /* Some padding */
+  padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   display: block; /* Make the buttons appear below each other */
 }
 
+.logo {
+    padding-bottom: 30px;
+}
 
 .bg {
     background: url(background-original.jpg) no-repeat center center fixed;
@@ -47,13 +50,4 @@
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
      background-size: 100% auto;
-}
-
-.row-full{
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  height: 100px;
-  margin-top: 100px;
-  left: 50%;
 }
